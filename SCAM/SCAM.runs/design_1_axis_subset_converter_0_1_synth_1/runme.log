@@ -1,0 +1,58 @@
+
+*** Running vivado
+    with args -log design_1_axis_subset_converter_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axis_subset_converter_0_1.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axis_subset_converter_0_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1496.746 ; gain = 0.000 ; free physical = 12531 ; free virtual = 43922
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/synth/design_1_axis_subset_converter_0_1.v:58]
+INFO: [Synth 8-638] synthesizing module 'top_design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/top_design_1_axis_subset_converter_0_1.v:60]
+INFO: [Synth 8-638] synthesizing module 'axis_subset_converter_v1_1_14_core' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0e57/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axis_subset_converter_v1_1_14_core' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0e57/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'tdata_design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tdata_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-256] done synthesizing module 'tdata_design_1_axis_subset_converter_0_1' (2#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tdata_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-638] synthesizing module 'tuser_design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tuser_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-256] done synthesizing module 'tuser_design_1_axis_subset_converter_0_1' (3#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tuser_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-638] synthesizing module 'tid_design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tid_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-256] done synthesizing module 'tid_design_1_axis_subset_converter_0_1' (4#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tid_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-638] synthesizing module 'tdest_design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tdest_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-256] done synthesizing module 'tdest_design_1_axis_subset_converter_0_1' (5#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tdest_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-638] synthesizing module 'tstrb_design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tstrb_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-256] done synthesizing module 'tstrb_design_1_axis_subset_converter_0_1' (6#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tstrb_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-638] synthesizing module 'tkeep_design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tkeep_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-256] done synthesizing module 'tkeep_design_1_axis_subset_converter_0_1' (7#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tkeep_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-638] synthesizing module 'tlast_design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tlast_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-256] done synthesizing module 'tlast_design_1_axis_subset_converter_0_1' (8#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/tlast_design_1_axis_subset_converter_0_1.v:48]
+INFO: [Synth 8-256] done synthesizing module 'top_design_1_axis_subset_converter_0_1' (9#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/hdl/top_design_1_axis_subset_converter_0_1.v:60]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axis_subset_converter_0_1' (10#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/synth/design_1_axis_subset_converter_0_1.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1496.746 ; gain = 0.000 ; free physical = 12269 ; free virtual = 43659
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1496.746 ; gain = 0.000 ; free physical = 12205 ; free virtual = 43595
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2030.645 ; gain = 0.000 ; free physical = 11132 ; free virtual = 42663
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 2030.645 ; gain = 533.898 ; free physical = 9036 ; free virtual = 40606
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 2030.645 ; gain = 533.898 ; free physical = 9036 ; free virtual = 40606
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 2030.645 ; gain = 533.898 ; free physical = 9033 ; free virtual = 40603
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 2030.645 ; gain = 533.898 ; free physical = 9029 ; free virtual = 40599
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 2030.645 ; gain = 533.898 ; free physical = 9395 ; free virtual = 40967
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2711.551 ; gain = 1214.805 ; free physical = 9650 ; free virtual = 41286
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2711.551 ; gain = 1214.805 ; free physical = 9649 ; free virtual = 41284
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2721.566 ; gain = 1224.820 ; free physical = 9639 ; free virtual = 41274
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2721.566 ; gain = 1224.820 ; free physical = 9493 ; free virtual = 41129
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2721.566 ; gain = 1224.820 ; free physical = 9493 ; free virtual = 41129
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2721.566 ; gain = 1224.820 ; free physical = 9493 ; free virtual = 41129
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2721.566 ; gain = 1224.820 ; free physical = 9493 ; free virtual = 41129
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2721.566 ; gain = 1224.820 ; free physical = 9493 ; free virtual = 41129
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2721.566 ; gain = 1224.820 ; free physical = 9493 ; free virtual = 41129
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:24 . Memory (MB): peak = 2721.566 ; gain = 1224.820 ; free physical = 9492 ; free virtual = 41128
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:26 . Memory (MB): peak = 2762.199 ; gain = 1286.828 ; free physical = 9242 ; free virtual = 40878

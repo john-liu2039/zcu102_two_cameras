@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 24 19:15:31 2021
+# Process ID: 24627
+# Current directory: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_zynq_ultra_ps_e_0_0_synth_1
+# Command line: vivado -log design_1_zynq_ultra_ps_e_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_zynq_ultra_ps_e_0_0.tcl
+# Log file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_zynq_ultra_ps_e_0_0_synth_1/design_1_zynq_ultra_ps_e_0_0.vds
+# Journal file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_zynq_ultra_ps_e_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_zynq_ultra_ps_e_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1496.738 ; gain = 0.000 ; free physical = 12833 ; free virtual = 44217
+INFO: [Synth 8-638] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'zynq_ultra_ps_e_v3_1_0_zynq_ultra_ps_e' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_1_0.v:322]
+INFO: [Synth 8-638] synthesizing module 'BUFG_PS' [/tools/Xilinx1/Vivado/2017.3/scripts/rt/data/unisim_comp.v:796]
+INFO: [Synth 8-256] done synthesizing module 'BUFG_PS' (1#1) [/tools/Xilinx1/Vivado/2017.3/scripts/rt/data/unisim_comp.v:796]
+INFO: [Synth 8-638] synthesizing module 'PS8' [/tools/Xilinx1/Vivado/2017.3/scripts/rt/data/unisim_comp.v:41805]
+INFO: [Synth 8-256] done synthesizing module 'PS8' (2#1) [/tools/Xilinx1/Vivado/2017.3/scripts/rt/data/unisim_comp.v:41805]
+INFO: [Synth 8-256] done synthesizing module 'zynq_ultra_ps_e_v3_1_0_zynq_ultra_ps_e' (3#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_1_0.v:322]
+INFO: [Synth 8-256] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (4#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/synth/design_1_zynq_ultra_ps_e_0_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1496.738 ; gain = 0.000 ; free physical = 12468 ; free virtual = 43859
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.738 ; gain = 0.000 ; free physical = 12401 ; free virtual = 43789
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2060.707 ; gain = 1.000 ; free physical = 11346 ; free virtual = 42872
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2060.707 ; gain = 563.969 ; free physical = 9223 ; free virtual = 40797
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2060.707 ; gain = 563.969 ; free physical = 9220 ; free virtual = 40794
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2060.707 ; gain = 563.969 ; free physical = 9211 ; free virtual = 40788
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2060.707 ; gain = 563.969 ; free physical = 9051 ; free virtual = 40621
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 2060.707 ; gain = 563.969 ; free physical = 9395 ; free virtual = 40966
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:28 . Memory (MB): peak = 3866.629 ; gain = 2369.891 ; free physical = 7705 ; free virtual = 39343
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:28 . Memory (MB): peak = 3892.637 ; gain = 2395.898 ; free physical = 7745 ; free virtual = 39383
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:34 . Memory (MB): peak = 3915.277 ; gain = 2418.539 ; free physical = 9023 ; free virtual = 40668
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:38 . Memory (MB): peak = 3915.277 ; gain = 2418.539 ; free physical = 10392 ; free virtual = 42047
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:38 . Memory (MB): peak = 3915.277 ; gain = 2418.539 ; free physical = 10390 ; free virtual = 42044
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:38 . Memory (MB): peak = 3915.277 ; gain = 2418.539 ; free physical = 10388 ; free virtual = 42042
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:38 . Memory (MB): peak = 3915.277 ; gain = 2418.539 ; free physical = 10389 ; free virtual = 42043
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:38 . Memory (MB): peak = 3915.277 ; gain = 2418.539 ; free physical = 10388 ; free virtual = 42042
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:38 . Memory (MB): peak = 3915.277 ; gain = 2418.539 ; free physical = 10385 ; free virtual = 42039
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG_PS |     1|
+|2     |LUT1    |   394|
+|3     |PS8     |     1|
+|4     |FDRE    |     1|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:38 . Memory (MB): peak = 3915.277 ; gain = 2418.539 ; free physical = 10384 ; free virtual = 42038
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:40 . Memory (MB): peak = 3931.277 ; gain = 2455.914 ; free physical = 11349 ; free virtual = 43005

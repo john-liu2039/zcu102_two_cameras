@@ -1,0 +1,13 @@
+
+*** Running vivado
+    with args -log design_1_v_gamma_lut_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_v_gamma_lut_0_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_v_gamma_lut_0_0.tcl -notrace
+compile_c: Time (s): cpu = 00:00:48 ; elapsed = 00:01:05 . Memory (MB): peak = 1475.367 ; gain = 0.000 ; free physical = 14956 ; free virtual = 46316
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_v_gamma_lut_0_0, cache-ID = 52fc3255b4626892.

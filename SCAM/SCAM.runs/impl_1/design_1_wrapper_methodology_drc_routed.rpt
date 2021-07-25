@@ -1,0 +1,145 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Sat Jul 24 19:34:31 2021
+| Host         : ad2039 running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xczu9eg-ffvb1156-2-i
+| Speed File   : -2
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 21
++-----------+----------+------------------------------------------------------+------------+
+| Rule      | Severity | Description                                          | Violations |
++-----------+----------+------------------------------------------------------+------------+
+| TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                        | 9          |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                   | 8          |
+| CLKC-26   | Advisory | MMCME4 with BUF_IN drives sequential IO with CLKOUT0 | 1          |
+| CLKC-30   | Advisory | MMCME4 not driven by IO has BUFG in feedback loop    | 1          |
++-----------+----------+------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on push_buttons_5bits_tri_i[0] relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on push_buttons_5bits_tri_i[1] relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on push_buttons_5bits_tri_i[2] relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on push_buttons_5bits_tri_i[3] relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on push_buttons_5bits_tri_i[4] relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on sensor0_iic_scl_io relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on sensor0_iic_sda_io relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on sensor1_iic_scl_io relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on sensor1_iic_sda_io relative to clock(s) clk_pl_0
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 19 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_design_1_clk_wiz_1_0 and clk_out4_design_1_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 149). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 19 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_design_1_clk_wiz_1_0 and clk_out4_design_1_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 157). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 19 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_design_1_clk_wiz_1_0 and clk_out1_design_1_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 151). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 19 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_design_1_clk_wiz_1_0 and clk_out1_design_1_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 159). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 19 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_design_1_clk_wiz_1_0 and clk_out1_design_1_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 165). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 19 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_design_1_clk_wiz_1_0 and clk_out1_design_1_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 209). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#7 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 19 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_design_1_clk_wiz_1_0 and clk_out1_design_1_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 211). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#8 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 19 in the Timing Constraints window in Vivado IDE) between clocks clk_out4_design_1_clk_wiz_1_0 and clk_out1_design_1_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 255). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+CLKC-26#1 Advisory
+MMCME4 with BUF_IN drives sequential IO with CLKOUT0  
+The MMCME4 cell design_1_i/clk_wiz_1/inst/mmcme4_adv_inst has COMPENSATION value BUF_IN, but CLKOUT0 output drives sequential cells directly connected to ports. In order to achieve insertion delay and phase-alignment for the sequential cells directly connected to ports, a COMPENSATION of ZHOLD must be used. (The problem cell is sensor1_iic_sda_iobuf/IBUFCTRL_INST (in sensor1_iic_sda_iobuf macro).)
+Related violations: <none>
+
+CLKC-30#1 Advisory
+MMCME4 not driven by IO has BUFG in feedback loop  
+The MMCME4 cell design_1_i/clk_wiz_1/inst/mmcme4_adv_inst has a BUFGCE design_1_i/clk_wiz_1/inst/clkf_buf clock buffer in the feedback loop, but the clock input is not directly driven by an I/O to create a Zero Delay Buffer Clock (a common use for having a buffer in the feedback loop). If there is no specific need for this buffer in the feedback loop (e.g. no timing paths between CLKINx/CLKOUTx domains or low latency requirement), then it is suggested to remove that BUFG* from the feedback path. This will allow for a lower power solution and free the clock resource for other purposes.
+Related violations: <none>
+
+

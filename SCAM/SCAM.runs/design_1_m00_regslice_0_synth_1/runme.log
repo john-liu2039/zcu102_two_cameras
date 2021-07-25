@@ -1,0 +1,59 @@
+
+*** Running vivado
+    with args -log design_1_m00_regslice_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_m00_regslice_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_m00_regslice_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1497.746 ; gain = 0.000 ; free physical = 16736 ; free virtual = 47574
+INFO: [Synth 8-638] synthesizing module 'design_1_m00_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_m00_regslice_0/synth/design_1_m00_regslice_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axi_register_slice' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:1284]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized0' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized1' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axic_register_slice__parameterized2' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (2#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (3#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_14_axi_register_slice' (4#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/a259/hdl/axi_register_slice_v2_1_vl_rfs.v:1284]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m00_regslice_0' (5#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_m00_regslice_0/synth/design_1_m00_regslice_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1497.746 ; gain = 0.000 ; free physical = 16464 ; free virtual = 47299
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1497.746 ; gain = 0.000 ; free physical = 16425 ; free virtual = 47260
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2122.605 ; gain = 1.000 ; free physical = 11464 ; free virtual = 42308
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 2122.605 ; gain = 624.859 ; free physical = 9754 ; free virtual = 40587
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 2122.605 ; gain = 624.859 ; free physical = 9753 ; free virtual = 40587
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 2122.605 ; gain = 624.859 ; free physical = 9754 ; free virtual = 40587
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 2122.605 ; gain = 624.859 ; free physical = 9676 ; free virtual = 40510
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 2122.605 ; gain = 624.859 ; free physical = 9719 ; free virtual = 40555
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:21 . Memory (MB): peak = 2733.582 ; gain = 1235.836 ; free physical = 9380 ; free virtual = 40235
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:21 . Memory (MB): peak = 2744.598 ; gain = 1246.852 ; free physical = 9692 ; free virtual = 40547
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:21 . Memory (MB): peak = 2757.613 ; gain = 1259.867 ; free physical = 10182 ; free virtual = 41037
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:22 . Memory (MB): peak = 2757.613 ; gain = 1259.867 ; free physical = 12760 ; free virtual = 43617
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:22 . Memory (MB): peak = 2757.613 ; gain = 1259.867 ; free physical = 12759 ; free virtual = 43616
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:22 . Memory (MB): peak = 2757.613 ; gain = 1259.867 ; free physical = 12770 ; free virtual = 43630
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:01:22 . Memory (MB): peak = 2757.613 ; gain = 1259.867 ; free physical = 12769 ; free virtual = 43630
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:22 . Memory (MB): peak = 2757.613 ; gain = 1259.867 ; free physical = 12744 ; free virtual = 43614
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:22 . Memory (MB): peak = 2757.613 ; gain = 1259.867 ; free physical = 12739 ; free virtual = 43608
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     6|
+|2     |LUT2 |     2|
+|3     |LUT3 |   280|
+|4     |LUT4 |     7|
+|5     |FDRE |   727|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:22 . Memory (MB): peak = 2757.613 ; gain = 1259.867 ; free physical = 12735 ; free virtual = 43604
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2811.629 ; gain = 1335.258 ; free physical = 12487 ; free virtual = 43345

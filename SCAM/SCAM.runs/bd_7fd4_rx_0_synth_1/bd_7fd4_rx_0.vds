@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 24 19:15:52 2021
+# Process ID: 25196
+# Current directory: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_7fd4_rx_0_synth_1
+# Command line: vivado -log bd_7fd4_rx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_7fd4_rx_0.tcl
+# Log file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_7fd4_rx_0_synth_1/bd_7fd4_rx_0.vds
+# Journal file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_7fd4_rx_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_7fd4_rx_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1506.746 ; gain = 0.000 ; free physical = 10189 ; free virtual = 41753
+INFO: [Synth 8-638] synthesizing module 'bd_7fd4_rx_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/synth/bd_7fd4_rx_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fifo0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/ip_2/synth/mipi_csi2_rx_ctrl_v1_0_6_fifo0.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_async_rst' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1177]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_async_rst' (2#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1177]
+INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fifo0' (20#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/ip_2/synth/mipi_csi2_rx_ctrl_v1_0_6_fifo0.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_async_rst__parameterized0' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1177]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_async_rst__parameterized0' (21#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1177]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_single' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_single' (23#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fifo1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/ip_0/synth/mipi_csi2_rx_ctrl_v1_0_6_fifo1.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_single__parameterized0' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_single__parameterized0' (23#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_gray' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:300]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_gray' (24#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:300]
+INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fifo1' (28#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/ip_0/synth/mipi_csi2_rx_ctrl_v1_0_6_fifo1.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fc13' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/mipi_csi2_rx_ctrl_v1_0_6_fc13.v:47]
+INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fc_644096' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/ip_1/synth/mipi_csi2_rx_ctrl_v1_0_6_fc_644096.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fc_644096' (45#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/ip_1/synth/mipi_csi2_rx_ctrl_v1_0_6_fc_644096.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fc13' (46#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/mipi_csi2_rx_ctrl_v1_0_6_fc13.v:47]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_handshake' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:500]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_handshake' (51#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:500]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_array_single' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:966]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_single__parameterized1' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_single__parameterized1' (51#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_array_single' (52#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:966]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_handshake__parameterized0' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:500]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_handshake__parameterized0' (52#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:500]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_pulse' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:762]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_pulse' (53#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:762]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_array_single__parameterized0' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:966]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_array_single__parameterized0' (54#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:966]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_array_single__parameterized1' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:966]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_array_single__parameterized1' (54#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:966]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_handshake__parameterized1' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:500]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_handshake__parameterized1' (54#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:500]
+INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fifo2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/ip_3/synth/mipi_csi2_rx_ctrl_v1_0_6_fifo2.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx_ctrl_v1_0_6_fifo2' (55#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/ip_3/synth/mipi_csi2_rx_ctrl_v1_0_6_fifo2.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'bd_7fd4_rx_0' (59#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_1/synth/bd_7fd4_rx_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:01:30 ; elapsed = 00:01:49 . Memory (MB): peak = 1514.316 ; gain = 7.570 ; free physical = 15986 ; free virtual = 47626
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:31 ; elapsed = 00:01:49 . Memory (MB): peak = 1514.316 ; gain = 7.570 ; free physical = 15729 ; free virtual = 47369
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2200.301 ; gain = 0.000 ; free physical = 12229 ; free virtual = 43862
+Finished Constraint Validation : Time (s): cpu = 00:01:55 ; elapsed = 00:02:23 . Memory (MB): peak = 2200.301 ; gain = 693.555 ; free physical = 9851 ; free virtual = 41498
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:55 ; elapsed = 00:02:23 . Memory (MB): peak = 2200.301 ; gain = 693.555 ; free physical = 9850 ; free virtual = 41497
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:02:23 . Memory (MB): peak = 2200.301 ; gain = 693.555 ; free physical = 9921 ; free virtual = 41555
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:58 ; elapsed = 00:02:26 . Memory (MB): peak = 2200.301 ; gain = 693.555 ; free physical = 9118 ; free virtual = 40763
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:39 . Memory (MB): peak = 2200.301 ; gain = 693.555 ; free physical = 6328 ; free virtual = 37964
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:26 ; elapsed = 00:03:17 . Memory (MB): peak = 2814.277 ; gain = 1307.531 ; free physical = 3489 ; free virtual = 35132
+Finished Timing Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:03:20 . Memory (MB): peak = 2853.316 ; gain = 1346.570 ; free physical = 4386 ; free virtual = 36030
+Finished Technology Mapping : Time (s): cpu = 00:02:31 ; elapsed = 00:03:24 . Memory (MB): peak = 2876.605 ; gain = 1369.859 ; free physical = 7257 ; free virtual = 38898
+Finished IO Insertion : Time (s): cpu = 00:02:31 ; elapsed = 00:03:24 . Memory (MB): peak = 2876.605 ; gain = 1369.859 ; free physical = 7125 ; free virtual = 38766
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:31 ; elapsed = 00:03:24 . Memory (MB): peak = 2876.605 ; gain = 1369.859 ; free physical = 7124 ; free virtual = 38766
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:32 ; elapsed = 00:03:25 . Memory (MB): peak = 2876.605 ; gain = 1369.859 ; free physical = 7021 ; free virtual = 38663
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:32 ; elapsed = 00:03:25 . Memory (MB): peak = 2876.605 ; gain = 1369.859 ; free physical = 7013 ; free virtual = 38655
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:32 ; elapsed = 00:03:25 . Memory (MB): peak = 2876.605 ; gain = 1369.859 ; free physical = 6981 ; free virtual = 38623
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:32 ; elapsed = 00:03:25 . Memory (MB): peak = 2876.605 ; gain = 1369.859 ; free physical = 6987 ; free virtual = 38628
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    32|
+|2     |LUT1     |    57|
+|3     |LUT2     |   303|
+|4     |LUT3     |   219|
+|5     |LUT4     |   316|
+|6     |LUT5     |   287|
+|7     |LUT6     |   575|
+|8     |MUXCY    |    30|
+|9     |MUXF7    |     2|
+|10    |RAM32M16 |     9|
+|11    |RAMB36E2 |     8|
+|12    |SRL16E   |     1|
+|13    |FDCE     |   339|
+|14    |FDPE     |   102|
+|15    |FDRE     |  2148|
+|16    |FDSE     |    36|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:32 ; elapsed = 00:03:25 . Memory (MB): peak = 2876.605 ; gain = 1369.859 ; free physical = 6989 ; free virtual = 38630
+synth_design: Time (s): cpu = 00:02:36 ; elapsed = 00:03:29 . Memory (MB): peak = 3125.957 ; gain = 1619.211 ; free physical = 8158 ; free virtual = 39802

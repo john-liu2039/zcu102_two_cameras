@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 24 19:11:15 2021
+# Process ID: 19713
+# Current directory: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_platform_interrupts_0_synth_1
+# Command line: vivado -log design_1_platform_interrupts_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_platform_interrupts_0.tcl
+# Log file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_platform_interrupts_0_synth_1/design_1_platform_interrupts_0.vds
+# Journal file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_platform_interrupts_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_platform_interrupts_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1497.738 ; gain = 0.000 ; free physical = 6913 ; free virtual = 50870
+INFO: [Synth 8-638] synthesizing module 'design_1_platform_interrupts_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_platform_interrupts_0/synth/design_1_platform_interrupts_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_platform_interrupts_0' (2#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_platform_interrupts_0/synth/design_1_platform_interrupts_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1497.738 ; gain = 0.000 ; free physical = 6887 ; free virtual = 50848
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1497.738 ; gain = 0.000 ; free physical = 6872 ; free virtual = 50833
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2025.637 ; gain = 0.000 ; free physical = 449 ; free virtual = 41398
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 2025.637 ; gain = 527.898 ; free physical = 699 ; free virtual = 40506
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 2025.637 ; gain = 527.898 ; free physical = 699 ; free virtual = 40506
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 2025.637 ; gain = 527.898 ; free physical = 704 ; free virtual = 40511
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 2025.637 ; gain = 527.898 ; free physical = 710 ; free virtual = 40517
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 2025.637 ; gain = 527.898 ; free physical = 751 ; free virtual = 40567
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:18 . Memory (MB): peak = 2710.543 ; gain = 1212.805 ; free physical = 422 ; free virtual = 31441
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:18 . Memory (MB): peak = 2710.543 ; gain = 1212.805 ; free physical = 423 ; free virtual = 31442
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:18 . Memory (MB): peak = 2719.559 ; gain = 1221.820 ; free physical = 426 ; free virtual = 31432
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:19 . Memory (MB): peak = 2719.559 ; gain = 1221.820 ; free physical = 541 ; free virtual = 31310
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:19 . Memory (MB): peak = 2719.559 ; gain = 1221.820 ; free physical = 541 ; free virtual = 31309
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:19 . Memory (MB): peak = 2719.559 ; gain = 1221.820 ; free physical = 545 ; free virtual = 31313
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:19 . Memory (MB): peak = 2719.559 ; gain = 1221.820 ; free physical = 543 ; free virtual = 31311
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:19 . Memory (MB): peak = 2719.559 ; gain = 1221.820 ; free physical = 543 ; free virtual = 31311
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:19 . Memory (MB): peak = 2719.559 ; gain = 1221.820 ; free physical = 542 ; free virtual = 31310
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:19 . Memory (MB): peak = 2719.559 ; gain = 1221.820 ; free physical = 544 ; free virtual = 31312
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:20 . Memory (MB): peak = 2752.191 ; gain = 1275.828 ; free physical = 1893 ; free virtual = 32661

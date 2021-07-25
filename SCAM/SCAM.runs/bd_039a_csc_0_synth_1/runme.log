@@ -1,0 +1,87 @@
+
+*** Running vivado
+    with args -log bd_039a_csc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_039a_csc_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source bd_039a_csc_0.tcl -notrace
+compile_c: Time (s): cpu = 00:00:52 ; elapsed = 00:01:15 . Memory (MB): peak = 1477.371 ; gain = 0.000 ; free physical = 17375 ; free virtual = 49031
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1498.746 ; gain = 0.000 ; free physical = 16307 ; free virtual = 47940
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/synth/bd_039a_csc_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_v_csc_CTRL_s_axi' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_CTRL_s_axi.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_v_csc_CTRL_s_axi' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_CTRL_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_AXIvideo2MultiPixStr' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_AXIvideo2MultiPixStr.v:10]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_reg_unsigned_short_s' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_reg_unsigned_short_s.v:10]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_reg_unsigned_short_s' (2#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_reg_unsigned_short_s.v:10]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_AXIvideo2MultiPixStr' (3#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_AXIvideo2MultiPixStr.v:10]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_v_csc_mul_mul_8nsbkb' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mul_mul_8nsbkb.v:14]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_v_csc_mul_mul_8nsbkb_DSP48_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mul_mul_8nsbkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_v_csc_mul_mul_8nsbkb_DSP48_0' (4#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mul_mul_8nsbkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_v_csc_mul_mul_8nsbkb' (5#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mul_mul_8nsbkb.v:14]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_v_csc_mac_muladd_cud' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mac_muladd_cud.v:34]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_v_csc_mac_muladd_cud_DSP48_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mac_muladd_cud.v:10]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_v_csc_mac_muladd_cud_DSP48_1' (6#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mac_muladd_cud.v:10]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_v_csc_mac_muladd_cud' (7#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mac_muladd_cud.v:34]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_v_csc_mac_muladd_dEe' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mac_muladd_dEe.v:34]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_v_csc_mac_muladd_dEe_DSP48_2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mac_muladd_dEe.v:10]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_v_csc_mac_muladd_dEe_DSP48_2' (8#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mac_muladd_dEe.v:10]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_v_csc_mac_muladd_dEe' (9#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_v_csc_mac_muladd_dEe.v:34]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_MultiPixStream2AXIvi' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_MultiPixStream2AXIvi.v:10]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_MultiPixStream2AXIvi' (11#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_MultiPixStream2AXIvi.v:10]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_fifo_w8_d1_A' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_fifo_w8_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'bd_039a_csc_0_fifo_w8_d1_A_shiftReg' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_fifo_w8_d1_A_shiftReg' (12#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0_fifo_w8_d1_A' (13#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/hdl/verilog/bd_039a_csc_0_fifo_w8_d1_A.v:45]
+INFO: [Synth 8-256] done synthesizing module 'bd_039a_csc_0' (15#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_0/bd_0/ip/ip_0/synth/bd_039a_csc_0.v:57]
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1498.746 ; gain = 0.000 ; free physical = 16348 ; free virtual = 47989
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1498.746 ; gain = 0.000 ; free physical = 16253 ; free virtual = 47894
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2152.090 ; gain = 1.000 ; free physical = 12419 ; free virtual = 44043
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 2152.090 ; gain = 653.344 ; free physical = 12256 ; free virtual = 43888
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 2152.090 ; gain = 653.344 ; free physical = 12255 ; free virtual = 43888
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 2152.090 ; gain = 653.344 ; free physical = 12262 ; free virtual = 43894
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 2152.090 ; gain = 653.344 ; free physical = 11770 ; free virtual = 43402
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 2152.090 ; gain = 653.344 ; free physical = 9856 ; free virtual = 41491
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:31 . Memory (MB): peak = 2804.027 ; gain = 1305.281 ; free physical = 3819 ; free virtual = 35452
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:32 . Memory (MB): peak = 2816.027 ; gain = 1317.281 ; free physical = 5390 ; free virtual = 37024
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:34 . Memory (MB): peak = 2850.316 ; gain = 1351.570 ; free physical = 4975 ; free virtual = 36609
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:34 . Memory (MB): peak = 2850.316 ; gain = 1351.570 ; free physical = 4845 ; free virtual = 36480
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:34 . Memory (MB): peak = 2850.316 ; gain = 1351.570 ; free physical = 4824 ; free virtual = 36459
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:35 . Memory (MB): peak = 2850.316 ; gain = 1351.570 ; free physical = 4705 ; free virtual = 36341
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:35 . Memory (MB): peak = 2850.316 ; gain = 1351.570 ; free physical = 4707 ; free virtual = 36343
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:35 . Memory (MB): peak = 2850.316 ; gain = 1351.570 ; free physical = 4700 ; free virtual = 36336
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:35 . Memory (MB): peak = 2850.316 ; gain = 1351.570 ; free physical = 4688 ; free virtual = 36323
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    63|
+|2     |DSP_ALU         |    18|
+|3     |DSP_A_B_DATA    |     6|
+|4     |DSP_A_B_DATA_2  |    12|
+|5     |DSP_C_DATA      |    12|
+|6     |DSP_C_DATA_1    |     6|
+|7     |DSP_MULTIPLIER  |    18|
+|8     |DSP_M_DATA      |    18|
+|9     |DSP_OUTPUT      |     6|
+|10    |DSP_OUTPUT_1    |    12|
+|11    |DSP_PREADD      |    18|
+|12    |DSP_PREADD_DATA |    18|
+|13    |LUT1            |    32|
+|14    |LUT2            |   380|
+|15    |LUT3            |   446|
+|16    |LUT4            |   270|
+|17    |LUT5            |   307|
+|18    |LUT6            |   259|
+|19    |MUXF7           |    16|
+|20    |MUXF8           |     6|
+|21    |FDRE            |  1246|
+|22    |FDSE            |    35|
++------+----------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:35 . Memory (MB): peak = 2850.316 ; gain = 1351.570 ; free physical = 4685 ; free virtual = 36320
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:38 . Memory (MB): peak = 2897.332 ; gain = 1419.961 ; free physical = 5863 ; free virtual = 37498

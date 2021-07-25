@@ -1,0 +1,76 @@
+21:30:55 **** Auto Build of configuration Debug for project scam ****
+make all 
+Building file: ../src/s2mm_PL/csi_rx.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/csi_rx.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/csi_rx.d" -MT"src/s2mm_PL/csi_rx.o" -o "src/s2mm_PL/csi_rx.o" "../src/s2mm_PL/csi_rx.c"
+Finished building: ../src/s2mm_PL/csi_rx.c
+ 
+Building file: ../src/s2mm_PL/demosaic.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/demosaic.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/demosaic.d" -MT"src/s2mm_PL/demosaic.o" -o "src/s2mm_PL/demosaic.o" "../src/s2mm_PL/demosaic.c"
+Finished building: ../src/s2mm_PL/demosaic.c
+ 
+Building file: ../src/s2mm_PL/emio.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/emio.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/emio.d" -MT"src/s2mm_PL/emio.o" -o "src/s2mm_PL/emio.o" "../src/s2mm_PL/emio.c"
+Finished building: ../src/s2mm_PL/emio.c
+ 
+Building file: ../src/s2mm_PL/frmbufwr.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/frmbufwr.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/frmbufwr.d" -MT"src/s2mm_PL/frmbufwr.o" -o "src/s2mm_PL/frmbufwr.o" "../src/s2mm_PL/frmbufwr.c"
+Finished building: ../src/s2mm_PL/frmbufwr.c
+ 
+Building file: ../src/s2mm_PL/gammalut.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/gammalut.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/gammalut.d" -MT"src/s2mm_PL/gammalut.o" -o "src/s2mm_PL/gammalut.o" "../src/s2mm_PL/gammalut.c"
+Finished building: ../src/s2mm_PL/gammalut.c
+ 
+Building file: ../src/s2mm_PL/gpio.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/gpio.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/gpio.d" -MT"src/s2mm_PL/gpio.o" -o "src/s2mm_PL/gpio.o" "../src/s2mm_PL/gpio.c"
+Finished building: ../src/s2mm_PL/gpio.c
+ 
+Building file: ../src/s2mm_PL/init.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/init.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/init.d" -MT"src/s2mm_PL/init.o" -o "src/s2mm_PL/init.o" "../src/s2mm_PL/init.c"
+Finished building: ../src/s2mm_PL/init.c
+ 
+Building file: ../src/s2mm_PL/irq.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/irq.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/irq.d" -MT"src/s2mm_PL/irq.o" -o "src/s2mm_PL/irq.o" "../src/s2mm_PL/irq.c"
+Finished building: ../src/s2mm_PL/irq.c
+ 
+Building file: ../src/s2mm_PL/procss.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/procss.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/procss.d" -MT"src/s2mm_PL/procss.o" -o "src/s2mm_PL/procss.o" "../src/s2mm_PL/procss.c"
+Finished building: ../src/s2mm_PL/procss.c
+ 
+Building file: ../src/s2mm_PL/sensor_i2c.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/s2mm_PL/sensor_i2c.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/s2mm_PL/sensor_i2c.d" -MT"src/s2mm_PL/sensor_i2c.o" -o "src/s2mm_PL/sensor_i2c.o" "../src/s2mm_PL/sensor_i2c.c"
+Finished building: ../src/s2mm_PL/sensor_i2c.c
+ 
+Building file: ../src/capture.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/capture.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/capture.d" -MT"src/capture.o" -o "src/capture.o" "../src/capture.c"
+Finished building: ../src/capture.c
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/imx274.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/imx274.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/imx274.d" -MT"src/imx274.o" -o "src/imx274.o" "../src/imx274.c"
+Finished building: ../src/imx274.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../scam_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+make: *** No rule to make target 'capture.o', needed by 'scam.elf'.  Stop.
+
+21:30:56 Build Finished (took 613ms)
+

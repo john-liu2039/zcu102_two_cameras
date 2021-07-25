@@ -1,0 +1,33 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port sensor0_iic -pg 1 -y 100 -defaultsOSRD
+preplace port csi_mipi_phy_if0 -pg 1 -y 20 -defaultsOSRD
+preplace port push_buttons_5bits -pg 1 -y 20 -defaultsOSRD
+preplace port csi_mipi_phy_if1 -pg 1 -y 40 -defaultsOSRD
+preplace port sensor1_iic -pg 1 -y 180 -defaultsOSRD
+preplace portBus sensor1_gpio_rst -pg 1 -y 140 -defaultsOSRD
+preplace portBus sensor0_gpio_rst -pg 1 -y 60 -defaultsOSRD
+preplace portBus sensor0_gpio_spi_cs_n -pg 1 -y 80 -defaultsOSRD
+preplace portBus sensor1_gpio_spi_cs_n -pg 1 -y 160 -defaultsOSRD
+preplace portBus sensor1_gpio_flash -pg 1 -y 120 -defaultsOSRD
+preplace portBus sensor0_gpio_flash -pg 1 -y 40 -defaultsOSRD
+preplace inst axi_interconnect_hp1 -pg 1 -lvl 3 -y 150 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -y 520 -defaultsOSRD
+preplace inst sensor0_iic -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst axi_interconnect_hpm0 -pg 1 -lvl 4 -y 490 -defaultsOSRD
+preplace inst axi_interconnect_hpm1 -pg 1 -lvl 3 -y 760 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -y 70 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst platform_interrupts -pg 1 -lvl 2 -y 1040 -defaultsOSRD
+preplace inst sensor1_iic -pg 1 -lvl 1 -y 370 -defaultsOSRD
+preplace inst mipi_csi2_rx0 -pg 1 -lvl 2 -y 450 -defaultsOSRD
+preplace inst interrupts0 -pg 1 -lvl 2 -y 240 -defaultsOSRD
+preplace inst mipi_csi2_rx1 -pg 1 -lvl 2 -y 780 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 2 -y 100 -defaultsOSRD
+levelinfo -pg 1 0 330 800 1100 1390 1550 -top 0 -bot 1240
+",
+}
+

@@ -1,0 +1,31 @@
+22:51:42 **** Auto Build of configuration Debug for project displaypot ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../displaypot_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'DpPsu_StartLink':
+../src/helloworld.c:149:6: warning: unused variable 'PeLevelTx' [-Wunused-variable]
+  u32 PeLevelTx;
+      ^~~~~~~~~
+../src/helloworld.c:148:6: warning: unused variable 'VsLevelTx' [-Wunused-variable]
+  u32 VsLevelTx;
+      ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: displaypot.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../displaypot_bsp/psu_cortexa53_0/lib -o "displaypot.elf"  ./src/helloworld.o ./src/platform.o ./src/xdppsu.o ./src/xdppsu_edid.o ./src/xdppsu_intr.o ./src/xdppsu_selftest.o ./src/xdppsu_serdes.o ./src/xdppsu_sinit.o ./src/xdppsu_spm.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/tools/Xilinx1/SDK/2017.3/gnu/aarch64/lin/aarch64-none/bin/../aarch64-none-elf/libc/usr/lib/crt0.o: In function `_start':
+/proj/esdt_sdk/gnu_abe/ABE/builds/lin/arm/arm-none-eabi/snapshots/newlib-newlib-2_4_0/libgloss/aarch64/crt0.S:219: undefined reference to `main'
+./src/helloworld.o: In function `DpPsu_StartVideoStream':
+makefile:36: recipe for target 'displaypot.elf' failed
+/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/displaypot/Debug/../src/helloworld.c:312: undefined reference to `DpPsu_StreamSrcSetup'
+/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/displaypot/Debug/../src/helloworld.c:313: undefined reference to `DpPsu_StreamSrcConfigure'
+/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/displaypot/Debug/../src/helloworld.c:314: undefined reference to `DpPsu_StreamSrcSync'
+../../displaypot_bsp/psu_cortexa53_0/lib/libxil.a(xil-crt0.o): In function `_startup':
+/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/displaypot_bsp/psu_cortexa53_0/libsrc/standalone_v6_4/src/xil-crt0.S:118: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [displaypot.elf] Error 1
+
+22:51:42 Build Finished (took 112ms)
+

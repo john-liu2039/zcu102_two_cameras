@@ -1,0 +1,838 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx1/Vivado/2017.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx1/Vivado/2017.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ad2039' on host 'ad2039' (Linux_x86_64 version 5.4.0-65-generic) on Sat Jul 24 19:16:53 CDT 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_c7bd_vsc_0_synth_1'
+INFO: [HLS 200-10] Creating and opening project '/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_c7bd_vsc_0_synth_1/bd_c7bd_vsc_0'.
+INFO: [HLS 200-10] Adding design file '/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler_config.h' to the project
+INFO: [HLS 200-10] Adding design file '/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp' to the project
+INFO: [HLS 200-10] Adding design file '/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.h' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_c7bd_vsc_0_synth_1/bd_c7bd_vsc_0/prj'.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-i'
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 3.334ns.
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+INFO: [HLS 200-10] Analyzing design file '/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp' ... 
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 360.438 ; gain = 13.375 ; free physical = 9394 ; free virtual = 40988
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 360.438 ; gain = 13.375 ; free physical = 10582 ; free virtual = 42181
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<48, ap_uint<8> >.1' into 'hls::AXIGetBitFields<48, ap_uint<8> >' (/tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<48, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:722).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<48, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:721).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<48, ap_uint<8> >' into 'AXIvideo2MultiPixStream' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:720).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<8, 1920, hls::Scalar<6, ap_uint<8> >, 0>::getval' into 'vscale_core_polyphase' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<8, 1920, hls::Scalar<6, ap_uint<8> >, 0>::insert_top_row' into 'hls::LineBuffer<8, 1920, hls::Scalar<6, ap_uint<8> >, 0>::insert_bottom' (/tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_mem.h:873).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<8, 1920, hls::Scalar<6, ap_uint<8> >, 0>::insert_bottom' into 'vscale_core_polyphase' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:292).
+INFO: [XFORM 203-603] Inlining function 'vscale_polyphase' into 'vscale_core_polyphase' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 488.434 ; gain = 141.371 ; free physical = 10461 ; free virtual = 42065
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:850: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 488.434 ; gain = 141.371 ; free physical = 10429 ; free virtual = 42038
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width_for_procpix' in function 'vscale_core_polyphase' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:814) in function 'MultiPixStream2AXIvideo' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:696) in function 'AXIvideo2MultiPixStream' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.1' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.1.1' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.2' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.2.1' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.3' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.4' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.5' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.6' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.6.1' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.7' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.7.1' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.7.1.1' in function 'vscale_core_polyphase' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1' (/tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171) in function 'MultiPixStream2AXIvideo' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.2' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:838) in function 'MultiPixStream2AXIvideo' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.2.1' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:840) in function 'MultiPixStream2AXIvideo' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1.1' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:713) in function 'AXIvideo2MultiPixStream' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1.1.1' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:715) in function 'AXIvideo2MultiPixStream' completely.
+INFO: [XFORM 203-102] Partitioning array 'value.val.V.assign' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'SrcYUV.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'OutYUV.V.val.V' .
+INFO: [XFORM 203-101] Partitioning array 'tmp.val.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:769) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.val.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:671) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'map'  in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'v_vscaler', detected/extracted 4 process function(s): 
+	 'AXIvideo2MultiPixStream'
+	 'vscale_core_polyphase'
+	 'Block_._crit_edge69_proc'
+	 'MultiPixStream2AXIvideo'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'vscale_core_polyphase'... converting 13 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'vscale_core_polyphase'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'vscale_core_polyphase'... converting 2 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:815:10) to (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:814:53) in function 'MultiPixStream2AXIvideo'... converting 25 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_axi_io.h:49:14) to (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:695:57) in function 'AXIvideo2MultiPixStream'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 552.434 ; gain = 205.371 ; free physical = 10772 ; free virtual = 42388
+WARNING: [XFORM 203-561] Updating loop upper bound from 3840 to 2047 for loop 'loop_width_for_procpix' in function 'vscale_core_polyphase'.
+WARNING: [XFORM 203-631] Renaming function 'vscale_core_polyphase' into vscale_core_polyphas.
+WARNING: [XFORM 203-631] Renaming function 'MultiPixStream2AXIvideo' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:171:53) into MultiPixStream2AXIvi.
+WARNING: [XFORM 203-631] Renaming function 'Block_._crit_edge69_proc' into Block_._crit_edge69_.
+WARNING: [XFORM 203-631] Renaming function 'AXIvideo2MultiPixStream' (/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:49:9) into AXIvideo2MultiPixStr.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.0.2.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.1.3.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.1.4.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.5.5.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.6..i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.6.1.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.6.2.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.6.3.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.6.4.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.6.5.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.7..i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.7.1.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.7.2.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.7.3.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.7.4.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.7.5.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.1.2.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.0.5.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.0.3.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.1.1.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.0.1.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.0..i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.1.5.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.2..i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.2.1.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.2.2.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.2.3.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.2.4.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.2.5.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.3..i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.3.1.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.3.2.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.3.3.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.3.4.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.3.5.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.4..i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.4.1.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.4.2.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.4.3.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.4.4.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.4.5.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.5..i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.5.1.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.5.2.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.5.3.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.5.4.i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.1..i'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.val.V.0.4.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.0.2.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.1.3.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.1.4.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.5.5.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.6..i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.6.1.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.6.2.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.6.3.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.6.4.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.6.5.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.7..i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.7.1.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.7.2.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.7.3.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.7.4.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.7.5.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.1.2.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.0.5.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.0.3.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.1.1.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.0.1.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.0..i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.1.5.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.2..i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.2.1.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.2.2.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.2.3.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.2.4.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.2.5.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.3..i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.3.1.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.3.2.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.3.3.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.3.4.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.3.5.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.4..i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.4.1.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.4.2.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.4.3.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.4.4.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.4.5.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.5..i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.5.1.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.5.2.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.5.3.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.5.4.i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.1..i'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.val.V.0.4.i'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 570.461 ; gain = 223.398 ; free physical = 10541 ; free virtual = 42159
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'v_vscaler' ...
+WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
+WARNING: [SYN 201-103] Legalizing function name 'Block_._crit_edge69_' to 'Block_crit_edge69_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	2	0	-nan	0	-nan	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.61 seconds; current allocated memory: 177.035 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 177.103 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 3	0	3	61	6	2	2	2	2	6	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 177.710 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 178.193 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vscale_core_polyphas' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_7_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[7]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[7].val[5].V') with incoming values : ('PixArray[7].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[7].val[5].V', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:291->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_2_6_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_2_7_i = sum_1_2_6_i + rhs_V_0_0_7_i * lhs_V_1_2_7_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_6_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[6]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[6].val[5].V') with incoming values : ('PixArray[7].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[6].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_2_5_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_2_6_i = sum_1_2_5_i + rhs_V_0_0_6_i * lhs_V_1_2_6_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_5_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[5]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[5].val[5].V') with incoming values : ('PixArray[6].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[5].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_2_4_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_2_5_i = sum_1_2_4_i + rhs_V_0_0_5_i * lhs_V_1_2_5_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_4_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[4]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[4].val[5].V') with incoming values : ('PixArray[5].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[4].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_2_3_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_2_4_i = sum_1_2_3_cast_i + rhs_V_0_0_4_i * lhs_V_1_2_4_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_3_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[3]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[3].val[5].V') with incoming values : ('PixArray[4].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[3].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_2_2_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_2_3_i = sum_1_2_2_i + rhs_V_0_0_3_i * lhs_V_1_2_3_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_2_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[2]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[2].val[5].V') with incoming values : ('PixArray[3].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[2].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_2_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_2_2_i = sum_1_2_1_cast_i + rhs_V_0_0_2_i * lhs_V_1_2_2_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_1_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[1]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[1].val[5].V') with incoming values : ('PixArray[2].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[1].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_2_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_2_1_i = sum_1_2_cast_i + rhs_V_0_0_1_i * lhs_V_1_2_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_0_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[0]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[0].val[5].V') with incoming values : ('PixArray[1].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[0].val[5].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  constant 2048
+  DSP48 Expression: sum_1_2_i = 2048 + rhs_V_i * lhs_V_1_2_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_7_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[7]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[7].val[4].V') with incoming values : ('PixArray[7].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[7].val[4].V', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:291->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_1_6_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_1_7_i = sum_1_1_6_i + rhs_V_0_0_7_i * lhs_V_1_1_7_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_6_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[6]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[6].val[4].V') with incoming values : ('PixArray[7].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[6].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_1_5_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_1_6_i = sum_1_1_5_i + rhs_V_0_0_6_i * lhs_V_1_1_6_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_5_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[5]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[5].val[4].V') with incoming values : ('PixArray[6].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[5].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_1_4_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_1_5_i = sum_1_1_4_i + rhs_V_0_0_5_i * lhs_V_1_1_5_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_4_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[4]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[4].val[4].V') with incoming values : ('PixArray[5].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[4].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_1_3_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_1_4_i = sum_1_1_3_cast_i + rhs_V_0_0_4_i * lhs_V_1_1_4_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_3_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[3]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[3].val[4].V') with incoming values : ('PixArray[4].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[3].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_1_2_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_1_3_i = sum_1_1_2_i + rhs_V_0_0_3_i * lhs_V_1_1_3_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_2_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[2]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[2].val[4].V') with incoming values : ('PixArray[3].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[2].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_1_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_1_2_i = sum_1_1_1_cast_i + rhs_V_0_0_2_i * lhs_V_1_1_2_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_1_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[1]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[1].val[4].V') with incoming values : ('PixArray[2].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[1].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_1_1_i = sum_1_1_cast_i + rhs_V_0_0_1_i * lhs_V_1_1_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_0_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[0]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[0].val[4].V') with incoming values : ('PixArray[1].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[0].val[4].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  constant 2048
+  DSP48 Expression: sum_1_1_i = 2048 + rhs_V_i * lhs_V_1_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_7_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[7]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[7].val[3].V') with incoming values : ('PixArray[7].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[7].val[3].V', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:291->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_0_6_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_0_7_i = sum_1_0_6_i + rhs_V_0_0_7_i * lhs_V_1_0_7_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_6_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[6]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[6].val[3].V') with incoming values : ('PixArray[7].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[6].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_0_5_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_0_6_i = sum_1_0_5_i + rhs_V_0_0_6_i * lhs_V_1_0_6_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_5_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[5]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[5].val[3].V') with incoming values : ('PixArray[6].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[5].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_0_4_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_0_5_i = sum_1_0_4_i + rhs_V_0_0_5_i * lhs_V_1_0_5_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_4_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[4]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[4].val[3].V') with incoming values : ('PixArray[5].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[4].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_0_3_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_0_4_i = sum_1_0_3_cast_i + rhs_V_0_0_4_i * lhs_V_1_0_4_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_3_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[3]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[3].val[3].V') with incoming values : ('PixArray[4].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[3].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_0_2_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_0_3_i = sum_1_0_2_i + rhs_V_0_0_3_i * lhs_V_1_0_3_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_2_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[2]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[2].val[3].V') with incoming values : ('PixArray[3].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[2].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_0_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_0_2_i = sum_1_0_1_cast_i + rhs_V_0_0_2_i * lhs_V_1_0_2_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_1_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[1]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[1].val[3].V') with incoming values : ('PixArray[2].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[1].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_1_0_1_i = sum_1_0_cast_i + rhs_V_0_0_1_i * lhs_V_1_0_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_0_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[0]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[0].val[3].V') with incoming values : ('PixArray[1].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[0].val[3].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  constant 2048
+  DSP48 Expression: sum_1_i = 2048 + rhs_V_i * lhs_V_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_7_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[7]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[7].val[2].V') with incoming values : ('PixArray[7].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[7].val[2].V', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:291->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_2_6_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_2_7_i = sum_0_2_6_i + rhs_V_0_0_7_i * lhs_V_0_2_7_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_6_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[6]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[6].val[2].V') with incoming values : ('PixArray[7].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[6].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_2_5_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_2_6_i = sum_0_2_5_i + rhs_V_0_0_6_i * lhs_V_0_2_6_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_5_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[5]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[5].val[2].V') with incoming values : ('PixArray[6].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[5].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_2_4_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_2_5_i = sum_0_2_4_i + rhs_V_0_0_5_i * lhs_V_0_2_5_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_4_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[4]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[4].val[2].V') with incoming values : ('PixArray[5].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[4].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_2_3_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_2_4_i = sum_0_2_3_cast_i + rhs_V_0_0_4_i * lhs_V_0_2_4_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_3_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[3]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[3].val[2].V') with incoming values : ('PixArray[4].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[3].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_2_2_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_2_3_i = sum_0_2_2_i + rhs_V_0_0_3_i * lhs_V_0_2_3_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_2_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[2]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[2].val[2].V') with incoming values : ('PixArray[3].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[2].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_2_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_2_2_i = sum_0_2_1_cast_i + rhs_V_0_0_2_i * lhs_V_0_2_2_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_1_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[1]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[1].val[2].V') with incoming values : ('PixArray[2].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[1].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_2_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_2_1_i = sum_0_2_cast_i + rhs_V_0_0_1_i * lhs_V_0_2_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_0_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[0]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[0].val[2].V') with incoming values : ('PixArray[1].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[0].val[2].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  constant 2048
+  DSP48 Expression: sum_0_2_i = 2048 + rhs_V_i * lhs_V_0_2_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_7_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[7]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[7].val[1].V') with incoming values : ('PixArray[7].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[7].val[1].V', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:291->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_1_6_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_1_7_i = sum_0_1_6_i + rhs_V_0_0_7_i * lhs_V_0_1_7_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_6_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[6]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[6].val[1].V') with incoming values : ('PixArray[7].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[6].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_1_5_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_1_6_i = sum_0_1_5_i + rhs_V_0_0_6_i * lhs_V_0_1_6_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_5_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[5]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[5].val[1].V') with incoming values : ('PixArray[6].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[5].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_1_4_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_1_5_i = sum_0_1_4_i + rhs_V_0_0_5_i * lhs_V_0_1_5_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_4_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[4]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[4].val[1].V') with incoming values : ('PixArray[5].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[4].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_1_3_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_1_4_i = sum_0_1_3_cast_i + rhs_V_0_0_4_i * lhs_V_0_1_4_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_3_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[3]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[3].val[1].V') with incoming values : ('PixArray[4].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[3].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_1_2_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_1_3_i = sum_0_1_2_i + rhs_V_0_0_3_i * lhs_V_0_1_3_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_2_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[2]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[2].val[1].V') with incoming values : ('PixArray[3].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[2].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_1_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_1_2_i = sum_0_1_1_cast_i + rhs_V_0_0_2_i * lhs_V_0_1_2_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_1_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[1]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[1].val[1].V') with incoming values : ('PixArray[2].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[1].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_1_1_i = sum_0_1_cast_i + rhs_V_0_0_1_i * lhs_V_0_1_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_0_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[0]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[0].val[1].V') with incoming values : ('PixArray[1].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[0].val[1].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  constant 2048
+  DSP48 Expression: sum_0_1_i = 2048 + rhs_V_i * lhs_V_0_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_7_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[7]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[7].val[0].V') with incoming values : ('PixArray[7].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[7].val[0].V', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:291->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_0_6_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_0_7_i = sum_0_0_6_i + rhs_V_0_0_7_i * lhs_V_0_0_7_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_6_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[6]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[6].val[0].V') with incoming values : ('PixArray[7].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[6].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_0_5_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_0_6_i = sum_0_0_5_i + rhs_V_0_0_6_i * lhs_V_0_0_6_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_5_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[5]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[5].val[0].V') with incoming values : ('PixArray[6].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[5].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_0_4_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_0_5_i = sum_0_0_4_i + rhs_V_0_0_5_i * lhs_V_0_0_5_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_4_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[4]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[4].val[0].V') with incoming values : ('PixArray[5].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[4].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_0_3_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_0_4_i = sum_0_0_3_cast_i + rhs_V_0_0_4_i * lhs_V_0_0_4_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_3_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[3]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[3].val[0].V') with incoming values : ('PixArray[4].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[3].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_0_2_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_0_3_i = sum_0_0_2_i + rhs_V_0_0_3_i * lhs_V_0_0_3_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_2_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[2]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[2].val[0].V') with incoming values : ('PixArray[3].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[2].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_0_0_1_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_0_2_i = sum_0_0_1_cast_i + rhs_V_0_0_2_i * lhs_V_0_0_2_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_1_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[1]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[1].val[0].V') with incoming values : ('PixArray[2].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[1].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  'add' operation ('sum_i', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+  DSP48 Expression: sum_0_0_1_i = sum_0_0_cast_i + rhs_V_0_0_1_i * lhs_V_0_0_1_i
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('FiltCoeff_0_load', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:336->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:309->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) on array 'FiltCoeff[0]', /home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:186->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148
+   b  'phi' operation ('PixArray[0].val[0].V') with incoming values : ('PixArray[1].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148) ('PixArray[0].val[0].V', /tools/Xilinx1/Vivado/2017.3/common/technology/autopilot/hls/hls_video_core.h:171->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:280->/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_scaler_0/bd_0/ip/ip_2/src/v_vscaler.cpp:148)
+   c  constant 2048
+  DSP48 Expression: sum_i = 2048 + rhs_V_i * lhs_V_i
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 23	0	11	487	34	3.1	4	2.5	3	19	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining loop 'loop_width_for_procpix'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 11.
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.23 seconds; current allocated memory: 181.115 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_0' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_2' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_3' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_4' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_5' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_6' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_7' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.36 seconds; current allocated memory: 184.057 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_crit_edge69_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	7	0	-nan	0	-nan	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.52 seconds; current allocated memory: 184.129 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 184.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 6	0	4	43	8	2	2	2	2	8	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 184.524 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 184.988 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_vscaler' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	10	0	-nan	0	-nan	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+WARNING: [SCHED 204-21] Estimated clock period (3.78763ns) exceeds the target (target clock period: 3.334ns, clock uncertainty: 0.41675ns, effective delay budget: 2.91725ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	wire read on port 'HwReg_HeightOut' (1 ns)
+	'call' operation to 'Block_._crit_edge69_' (2.79 ns)
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 185.248 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 185.991 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 186.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStr'.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 187.518 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vscale_core_polyphas' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_0_s' to 'vscale_core_polypbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_0_1' to 'vscale_core_polypcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_0_2' to 'vscale_core_polypdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_0_3' to 'vscale_core_polypeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_0_4' to 'vscale_core_polypfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_0_5' to 'vscale_core_polypg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_1_s' to 'vscale_core_polyphbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_1_1' to 'vscale_core_polypibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_1_2' to 'vscale_core_polypjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_1_3' to 'vscale_core_polypkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_1_4' to 'vscale_core_polyplbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_1_5' to 'vscale_core_polypmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_2_s' to 'vscale_core_polypncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_2_1' to 'vscale_core_polypocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_2_2' to 'vscale_core_polyppcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_2_3' to 'vscale_core_polypqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_2_4' to 'vscale_core_polyprcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_2_5' to 'vscale_core_polypsc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_3_s' to 'vscale_core_polyptde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_3_1' to 'vscale_core_polypudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_3_2' to 'vscale_core_polypvdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_3_3' to 'vscale_core_polypwdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_3_4' to 'vscale_core_polypxdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_3_5' to 'vscale_core_polypyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_4_s' to 'vscale_core_polypzec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_4_1' to 'vscale_core_polypAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_4_2' to 'vscale_core_polypBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_4_3' to 'vscale_core_polypCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_4_4' to 'vscale_core_polypDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_4_5' to 'vscale_core_polypEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_5_s' to 'vscale_core_polypFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_5_1' to 'vscale_core_polypGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_5_2' to 'vscale_core_polypHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_5_3' to 'vscale_core_polypIfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_5_4' to 'vscale_core_polypJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_5_5' to 'vscale_core_polypKfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_6_s' to 'vscale_core_polypLf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_6_1' to 'vscale_core_polypMgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_6_2' to 'vscale_core_polypNgs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_6_3' to 'vscale_core_polypOgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_6_4' to 'vscale_core_polypPgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_6_5' to 'vscale_core_polypQgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_7_s' to 'vscale_core_polypRg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_7_1' to 'vscale_core_polypShg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_7_2' to 'vscale_core_polypThq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_7_3' to 'vscale_core_polypUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_7_4' to 'vscale_core_polypVhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_LineBuf_val_val_V_7_5' to 'vscale_core_polypWhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_FiltCoeff_0' to 'vscale_core_polypXh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_FiltCoeff_1' to 'vscale_core_polypYie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_FiltCoeff_2' to 'vscale_core_polypZio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_FiltCoeff_3' to 'vscale_core_polyp0iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_FiltCoeff_4' to 'vscale_core_polyp1iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_FiltCoeff_5' to 'vscale_core_polyp2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_FiltCoeff_6' to 'vscale_core_polyp3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'vscale_core_polyphas_FiltCoeff_7' to 'vscale_core_polyp4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_vscaler_mux_83_8_1_1' to 'v_vscaler_mux_83_5jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_vscaler_mac_muladd_16s_8ns_13ns_24_1_1' to 'v_vscaler_mac_mul6jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_vscaler_mac_muladd_16s_8ns_24s_25_1_1' to 'v_vscaler_mac_mul7jG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_vscaler_mac_muladd_16s_8ns_25s_26_1_1' to 'v_vscaler_mac_mul8jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_vscaler_mac_muladd_16s_8ns_26s_26_1_1' to 'v_vscaler_mac_mul9j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_vscaler_mac_muladd_16s_8ns_26s_27_1_1' to 'v_vscaler_mac_mulbak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_vscaler_mac_muladd_16s_8ns_27s_27_1_1' to 'v_vscaler_mac_mulbbk' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'v_vscaler_mac_mul6jw': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_vscaler_mac_mul7jG': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_vscaler_mac_mul8jQ': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_vscaler_mac_mul9j0': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_vscaler_mac_mulbak': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_vscaler_mac_mulbbk': 18 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_vscaler_mux_83_5jm': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vscale_core_polyphas'.
+INFO: [HLS 200-111]  Elapsed time: 1.19 seconds; current allocated memory: 194.606 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_crit_edge69_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_crit_edge69_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.72 seconds; current allocated memory: 195.053 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvi'.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 196.286 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_vscaler' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/HwReg_HeightIn' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/HwReg_Width' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/HwReg_HeightOut' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/HwReg_LineRate' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/HwReg_ColorMode' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/HwReg_vfltCoeff' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'v_vscaler' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'HwReg_vfltCoeff', 'return', 'HwReg_HeightIn', 'HwReg_Width', 'HwReg_HeightOut', 'HwReg_LineRate' and 'HwReg_ColorMode' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_vscaler'.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 198.436 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [RTMG 210-278] Implementing memory 'bd_c7bd_vsc_0_vscale_core_polypbkb_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bd_c7bd_vsc_0_vscale_core_polypXh4_ram (RAM_1P_LUTRAM)' using distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'bd_c7bd_vsc_0_fifo_w8_d2_A' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 570.461 ; gain = 223.398 ; free physical = 7133 ; free virtual = 38765
+INFO: [SYSC 207-301] Generating SystemC RTL for v_vscaler with prefix bd_c7bd_vsc_0_.
+INFO: [VHDL 208-304] Generating VHDL RTL for v_vscaler with prefix bd_c7bd_vsc_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for v_vscaler with prefix bd_c7bd_vsc_0_.
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx1/Vivado/2017.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 24 19:17:52 2021...
+INFO: [HLS 200-112] Total elapsed time: 78.27 seconds; peak allocated memory: 198.436 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sat Jul 24 19:18:11 2021...

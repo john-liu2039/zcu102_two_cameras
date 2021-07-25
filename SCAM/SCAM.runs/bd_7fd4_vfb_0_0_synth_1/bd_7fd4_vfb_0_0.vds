@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 24 19:11:15 2021
+# Process ID: 19720
+# Current directory: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_7fd4_vfb_0_0_synth_1
+# Command line: vivado -log bd_7fd4_vfb_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_7fd4_vfb_0_0.tcl
+# Log file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_7fd4_vfb_0_0_synth_1/bd_7fd4_vfb_0_0.vds
+# Journal file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/bd_7fd4_vfb_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_7fd4_vfb_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1498.742 ; gain = 0.000 ; free physical = 3960 ; free virtual = 47941
+INFO: [Synth 8-638] synthesizing module 'bd_7fd4_vfb_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/bd_7fd4_vfb_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_7fd4_vfb_0_0_core' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/bd_7fd4_vfb_0_0_core.v:53]
+INFO: [Synth 8-638] synthesizing module 'vfb_v1_0_8_reorder' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/6cf3/hdl/vfb_v1_0_rfs.v:126]
+INFO: [Synth 8-256] done synthesizing module 'vfb_v1_0_8_reorder' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/6cf3/hdl/vfb_v1_0_rfs.v:126]
+INFO: [Synth 8-638] synthesizing module 'vfb_v1_0_8_arst_ff' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/6cf3/hdl/vfb_v1_0_rfs.v:55]
+INFO: [Synth 8-256] done synthesizing module 'vfb_v1_0_8_arst_ff' (2#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/6cf3/hdl/vfb_v1_0_rfs.v:55]
+INFO: [Synth 8-638] synthesizing module 'bd_7fd4_vfb_0_0_fifo' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/ip_0/synth/bd_7fd4_vfb_0_0_fifo.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_sync_rst' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1045]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_sync_rst' (3#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1045]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_single' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_single' (4#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_gray' [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:300]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_gray' (16#1) [/tools/Xilinx1/Vivado/2017.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:300]
+INFO: [Synth 8-256] done synthesizing module 'bd_7fd4_vfb_0_0_fifo' (31#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/ip_0/synth/bd_7fd4_vfb_0_0_fifo.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'bd_7fd4_vfb_0_0_axis_dconverter' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/bd_7fd4_vfb_0_0/src/verilog/bd_7fd4_vfb_0_0_axis_dconverter.v:47]
+INFO: [Synth 8-638] synthesizing module 'bd_7fd4_vfb_0_0_axis_converter' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/ip_1/synth/bd_7fd4_vfb_0_0_axis_converter.v:57]
+INFO: [Synth 8-638] synthesizing module 'axis_dwidth_converter_v1_1_13_axis_dwidth_converter' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/72cd/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-638] synthesizing module 'axis_dwidth_converter_v1_1_13_axisc_downsizer' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/72cd/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axis_dwidth_converter_v1_1_13_axisc_downsizer' (32#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/72cd/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axis_register_slice_v1_1_14_axis_register_slice' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/1fe1/hdl/axis_register_slice_v1_1_vl_rfs.v:1325]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (33#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-638] synthesizing module 'axis_register_slice_v1_1_14_axisc_register_slice' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/1fe1/hdl/axis_register_slice_v1_1_vl_rfs.v:556]
+INFO: [Synth 8-256] done synthesizing module 'axis_register_slice_v1_1_14_axisc_register_slice' (34#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/1fe1/hdl/axis_register_slice_v1_1_vl_rfs.v:556]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (35#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_register_slice_v1_1_14_axis_register_slice' (36#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/1fe1/hdl/axis_register_slice_v1_1_vl_rfs.v:1325]
+INFO: [Synth 8-638] synthesizing module 'axis_register_slice_v1_1_14_axis_register_slice__parameterized0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/1fe1/hdl/axis_register_slice_v1_1_vl_rfs.v:1325]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' (36#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-638] synthesizing module 'axis_register_slice_v1_1_14_axisc_register_slice__parameterized0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/1fe1/hdl/axis_register_slice_v1_1_vl_rfs.v:556]
+INFO: [Synth 8-256] done synthesizing module 'axis_register_slice_v1_1_14_axisc_register_slice__parameterized0' (36#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/1fe1/hdl/axis_register_slice_v1_1_vl_rfs.v:556]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' (36#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_register_slice_v1_1_14_axis_register_slice__parameterized0' (36#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/1fe1/hdl/axis_register_slice_v1_1_vl_rfs.v:1325]
+INFO: [Synth 8-256] done synthesizing module 'axis_dwidth_converter_v1_1_13_axis_dwidth_converter' (37#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/72cd/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-256] done synthesizing module 'bd_7fd4_vfb_0_0_axis_converter' (38#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/ip_1/synth/bd_7fd4_vfb_0_0_axis_converter.v:57]
+INFO: [Synth 8-256] done synthesizing module 'bd_7fd4_vfb_0_0_axis_dconverter' (39#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/bd_7fd4_vfb_0_0/src/verilog/bd_7fd4_vfb_0_0_axis_dconverter.v:47]
+INFO: [Synth 8-638] synthesizing module 'vfb_v1_0_8_op_inf' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/6cf3/hdl/vfb_v1_0_rfs.v:2283]
+INFO: [Synth 8-256] done synthesizing module 'vfb_v1_0_8_op_inf' (40#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ipshared/6cf3/hdl/vfb_v1_0_rfs.v:2283]
+INFO: [Synth 8-256] done synthesizing module 'bd_7fd4_vfb_0_0_core' (41#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/bd_7fd4_vfb_0_0_core.v:53]
+INFO: [Synth 8-256] done synthesizing module 'bd_7fd4_vfb_0_0' (42#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsystem_0_1/bd_0/ip/ip_3/bd_7fd4_vfb_0_0.v:53]
+Finished RTL Elaboration : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 1498.742 ; gain = 0.000 ; free physical = 17069 ; free virtual = 47842
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:17 ; elapsed = 00:01:32 . Memory (MB): peak = 1498.742 ; gain = 0.000 ; free physical = 16999 ; free virtual = 47747
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2146.945 ; gain = 0.000 ; free physical = 18393 ; free virtual = 49217
+Finished Constraint Validation : Time (s): cpu = 00:01:40 ; elapsed = 00:02:05 . Memory (MB): peak = 2146.945 ; gain = 648.203 ; free physical = 17130 ; free virtual = 47969
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:40 ; elapsed = 00:02:05 . Memory (MB): peak = 2146.945 ; gain = 648.203 ; free physical = 17130 ; free virtual = 47970
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:40 ; elapsed = 00:02:05 . Memory (MB): peak = 2146.945 ; gain = 648.203 ; free physical = 17129 ; free virtual = 47969
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:41 ; elapsed = 00:02:06 . Memory (MB): peak = 2146.945 ; gain = 648.203 ; free physical = 16798 ; free virtual = 47635
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:02:09 . Memory (MB): peak = 2146.945 ; gain = 648.203 ; free physical = 16147 ; free virtual = 46982
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:00 ; elapsed = 00:02:45 . Memory (MB): peak = 2765.922 ; gain = 1267.180 ; free physical = 9970 ; free virtual = 40809
+Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:47 . Memory (MB): peak = 2817.961 ; gain = 1319.219 ; free physical = 9348 ; free virtual = 40187
+Finished Technology Mapping : Time (s): cpu = 00:02:02 ; elapsed = 00:02:48 . Memory (MB): peak = 2825.969 ; gain = 1327.227 ; free physical = 9327 ; free virtual = 40166
+Finished IO Insertion : Time (s): cpu = 00:02:03 ; elapsed = 00:02:48 . Memory (MB): peak = 2825.969 ; gain = 1327.227 ; free physical = 9361 ; free virtual = 40200
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:03 ; elapsed = 00:02:48 . Memory (MB): peak = 2825.969 ; gain = 1327.227 ; free physical = 9360 ; free virtual = 40200
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:03 ; elapsed = 00:02:48 . Memory (MB): peak = 2825.969 ; gain = 1327.227 ; free physical = 9322 ; free virtual = 40163
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:03 ; elapsed = 00:02:48 . Memory (MB): peak = 2825.969 ; gain = 1327.227 ; free physical = 9320 ; free virtual = 40161
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:03 ; elapsed = 00:02:48 . Memory (MB): peak = 2825.969 ; gain = 1327.227 ; free physical = 9301 ; free virtual = 40142
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:03 ; elapsed = 00:02:48 . Memory (MB): peak = 2825.969 ; gain = 1327.227 ; free physical = 9299 ; free virtual = 40139
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    11|
+|2     |LUT2     |    44|
+|3     |LUT3     |   106|
+|4     |LUT4     |    24|
+|5     |LUT5     |   134|
+|6     |LUT6     |   205|
+|7     |MUXF7    |    40|
+|8     |RAMB18E2 |     1|
+|9     |RAMB36E2 |     1|
+|10    |SRL16E   |     3|
+|11    |FDPE     |     2|
+|12    |FDRE     |   882|
+|13    |FDSE     |    15|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:03 ; elapsed = 00:02:48 . Memory (MB): peak = 2825.969 ; gain = 1327.227 ; free physical = 9299 ; free virtual = 40138
+synth_design: Time (s): cpu = 00:02:06 ; elapsed = 00:02:52 . Memory (MB): peak = 3078.320 ; gain = 1600.953 ; free physical = 10618 ; free virtual = 41458

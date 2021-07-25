@@ -1,0 +1,1078 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 24 19:23:00 2021
+# Process ID: 1004
+# Current directory: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx1/Vivado/2017.3/data/ip'.
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1505.750 ; gain = 344.371 ; free physical = 22065 ; free virtual = 54023
+Command: synth_design -top design_1_wrapper -part xczu9eg-ffvb1156-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1065 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1505.750 ; gain = 0.000 ; free physical = 21951 ; free virtual = 53910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_intc_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_intc_0_0' (2#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_interconnect_hp1_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:1752]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_12NH6JI' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:9440]
+INFO: [Synth 8-638] synthesizing module 'design_1_m00_data_fifo_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m00_data_fifo_0' (3#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_m00_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m00_regslice_0' (4#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m00_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm00_regslice' of module 'design_1_m00_regslice_0' requires 80 connections, but only 78 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:9883]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_12NH6JI' (5#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:9440]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_VR4BH8' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:18336]
+INFO: [Synth 8-638] synthesizing module 'design_1_s00_data_fifo_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_s00_data_fifo_0' (6#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s00_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's00_data_fifo' of module 'design_1_s00_data_fifo_0' requires 72 connections, but only 70 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:18654]
+INFO: [Synth 8-638] synthesizing module 'design_1_s00_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_s00_regslice_0' (7#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_VR4BH8' (8#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:18336]
+INFO: [Synth 8-638] synthesizing module 'design_1_s00_mmu_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_s00_mmu_0' (9#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_17LKIRH' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:18800]
+INFO: [Synth 8-638] synthesizing module 'design_1_s01_data_fifo_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_s01_data_fifo_0' (10#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s01_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's01_data_fifo' of module 'design_1_s01_data_fifo_0' requires 72 connections, but only 70 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:19118]
+INFO: [Synth 8-638] synthesizing module 'design_1_s01_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_s01_regslice_0' (11#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_17LKIRH' (12#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:18800]
+INFO: [Synth 8-638] synthesizing module 'design_1_s01_mmu_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s01_mmu_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_s01_mmu_0' (13#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s01_mmu_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (14#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 78 connections, but only 76 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:2731]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_interconnect_hp1_0' (15#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:1752]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_interconnect_hpm0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:2810]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1NCZ022' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10164]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1NCZ022' (16#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10164]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_G9PCRV' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10496]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_G9PCRV' (17#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10496]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1LR2C21' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10838]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1LR2C21' (18#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10838]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_HLX1EW' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11170]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_HLX1EW' (19#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11170]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_1POYA6K' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11502]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_1POYA6K' (20#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11502]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_DLUCBX' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11834]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_DLUCBX' (21#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11834]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_CFKE2W' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17622]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (22#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_CFKE2W' (23#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17622]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_1' (24#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_1' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:3849]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_interconnect_hpm0_0' (25#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:2810]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_interconnect_hpm1_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:3890]
+INFO: [Synth 8-638] synthesizing module 'i00_couplers_imp_12WIQ37' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8634]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_1' (26#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'i00_couplers_imp_12WIQ37' (27#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8634]
+INFO: [Synth 8-638] synthesizing module 'i01_couplers_imp_RKX5KI' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8924]
+INFO: [Synth 8-256] done synthesizing module 'i01_couplers_imp_RKX5KI' (28#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8924]
+INFO: [Synth 8-638] synthesizing module 'i02_couplers_imp_1299C7K' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:9182]
+INFO: [Synth 8-256] done synthesizing module 'i02_couplers_imp_1299C7K' (29#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:9182]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1I28URU' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:9964]
+INFO: [Synth 8-638] synthesizing module 'design_1_m00_regslice_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m00_regslice_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m00_regslice_1' (30#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m00_regslice_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'm00_regslice' of module 'design_1_m00_regslice_1' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10123]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1I28URU' (31#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:9964]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_CMWD9N' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10296]
+INFO: [Synth 8-638] synthesizing module 'design_1_m01_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m01_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m01_regslice_0' (32#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m01_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm01_regslice' of module 'design_1_m01_regslice_0' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10455]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_CMWD9N' (33#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10296]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1J88H1L' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10628]
+INFO: [Synth 8-638] synthesizing module 'design_1_m02_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m02_regslice_0' (34#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1J88H1L' (35#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10628]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_B7967C' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10970]
+INFO: [Synth 8-638] synthesizing module 'design_1_m03_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m03_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m03_regslice_0' (36#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m03_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm03_regslice' of module 'design_1_m03_regslice_0' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11129]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_B7967C' (37#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:10970]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_1JW513G' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11302]
+INFO: [Synth 8-638] synthesizing module 'design_1_m04_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m04_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m04_regslice_0' (38#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m04_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm04_regslice' of module 'design_1_m04_regslice_0' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11461]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_1JW513G' (39#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11302]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_AKWPPP' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11634]
+INFO: [Synth 8-638] synthesizing module 'design_1_m05_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m05_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m05_regslice_0' (40#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m05_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm05_regslice' of module 'design_1_m05_regslice_0' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11793]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_AKWPPP' (41#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11634]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_1KS4DVZ' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11966]
+INFO: [Synth 8-638] synthesizing module 'design_1_m06_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m06_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m06_regslice_0' (42#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m06_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm06_regslice' of module 'design_1_m06_regslice_0' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:12125]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_1KS4DVZ' (43#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:11966]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_9Z7L4E' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:12166]
+INFO: [Synth 8-638] synthesizing module 'design_1_m07_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m07_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m07_regslice_0' (44#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m07_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm07_regslice' of module 'design_1_m07_regslice_0' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:12325]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_9Z7L4E' (45#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:12166]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1N8YPJA' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:12366]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_2' (46#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_m08_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m08_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m08_regslice_0' (47#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m08_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1N8YPJA' (48#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:12366]
+INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_GBWF1J' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:12720]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_3' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_3' (49#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_m09_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m09_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m09_regslice_0' (50#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m09_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm09_regslice' of module 'design_1_m09_regslice_0' requires 40 connections, but only 38 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13023]
+INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_GBWF1J' (51#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:12720]
+INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_5W1V2Q' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13064]
+INFO: [Synth 8-638] synthesizing module 'design_1_m10_regslice_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m10_regslice_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_m10_regslice_0' (52#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_m10_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm10_regslice' of module 'design_1_m10_regslice_0' requires 76 connections, but only 74 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13367]
+INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_5W1V2Q' (53#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13064]
+INFO: [Synth 8-638] synthesizing module 'm11_couplers_imp_1XH8O6R' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13444]
+INFO: [Synth 8-256] done synthesizing module 'm11_couplers_imp_1XH8O6R' (54#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13444]
+INFO: [Synth 8-638] synthesizing module 'm12_couplers_imp_4P4XLD' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13702]
+INFO: [Synth 8-256] done synthesizing module 'm12_couplers_imp_4P4XLD' (55#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13702]
+INFO: [Synth 8-638] synthesizing module 'm13_couplers_imp_1YYH7N4' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13960]
+INFO: [Synth 8-256] done synthesizing module 'm13_couplers_imp_1YYH7N4' (56#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13960]
+INFO: [Synth 8-638] synthesizing module 'm14_couplers_imp_8HDIMS' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:14218]
+INFO: [Synth 8-256] done synthesizing module 'm14_couplers_imp_8HDIMS' (57#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:14218]
+INFO: [Synth 8-638] synthesizing module 'm15_couplers_imp_1V2SXH1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:14476]
+INFO: [Synth 8-256] done synthesizing module 'm15_couplers_imp_1V2SXH1' (58#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:14476]
+INFO: [Synth 8-638] synthesizing module 'm16_couplers_imp_7KFIFR' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:14734]
+INFO: [Synth 8-256] done synthesizing module 'm16_couplers_imp_7KFIFR' (59#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:14734]
+INFO: [Synth 8-638] synthesizing module 'm17_couplers_imp_1VQ1Z3Q' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:14992]
+INFO: [Synth 8-256] done synthesizing module 'm17_couplers_imp_1VQ1Z3Q' (60#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:14992]
+INFO: [Synth 8-638] synthesizing module 'm18_couplers_imp_O5JFI' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:15250]
+INFO: [Synth 8-256] done synthesizing module 'm18_couplers_imp_O5JFI' (61#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:15250]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_GMC7M0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17924]
+INFO: [Synth 8-638] synthesizing module 'design_1_s00_regslice_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_s00_regslice_1' (62#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_s00_regslice_1_stub.v:6]
+WARNING: [Synth 8-350] instance 's00_regslice' of module 'design_1_s00_regslice_1' requires 84 connections, but only 82 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:18251]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_GMC7M0' (63#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17924]
+INFO: [Synth 8-638] synthesizing module 'design_1_tier2_xbar_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_tier2_xbar_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_tier2_xbar_0_0' (64#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_tier2_xbar_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_tier2_xbar_1_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_tier2_xbar_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_tier2_xbar_1_0' (65#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_tier2_xbar_1_0_stub.v:6]
+WARNING: [Synth 8-689] width (48) of port connection 'm_axi_aruser' does not match port width (128) of module 'design_1_tier2_xbar_1_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8418]
+WARNING: [Synth 8-689] width (48) of port connection 'm_axi_awuser' does not match port width (128) of module 'design_1_tier2_xbar_1_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8430]
+INFO: [Synth 8-638] synthesizing module 'design_1_tier2_xbar_2_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_tier2_xbar_2_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_tier2_xbar_2_0' (66#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_tier2_xbar_2_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'tier2_xbar_2' of module 'design_1_tier2_xbar_2_0' requires 74 connections, but only 72 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8480]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_xbar_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_2' (67#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_xbar_2_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arregion' does not match port width (12) of module 'design_1_xbar_2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8564]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awregion' does not match port width (12) of module 'design_1_xbar_2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:8576]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_interconnect_hpm1_0' (68#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:3890]
+WARNING: [Synth 8-350] instance 'axi_interconnect_hpm1' of module 'design_1_axi_interconnect_hpm1_0' requires 570 connections, but only 336 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:906]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_1_0' (69#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_clk_wiz_1_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_wiz_1' of module 'design_1_clk_wiz_1_0' requires 7 connections, but only 5 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:1243]
+INFO: [Synth 8-638] synthesizing module 'design_1_interrupts0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_interrupts0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_interrupts0_0' (70#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_interrupts0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx0_imp_WR11Y2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:15508]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_data_fifo_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axi_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_data_fifo_0_0' (71#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axi_data_fifo_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_data_fifo_0' of module 'design_1_axi_data_fifo_0_0' requires 72 connections, but only 70 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:16203]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_subset_converter_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axis_subset_converter_0_0' (72#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_demosaic_rst_gpio_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_demosaic_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_demosaic_rst_gpio_0' (73#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_demosaic_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_frmbuf_wr_rst_gpio_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_frmbuf_wr_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_frmbuf_wr_rst_gpio_0' (74#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_frmbuf_wr_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_gamma_rst_gpio_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_gamma_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gamma_rst_gpio_0' (75#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_gamma_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_mipi_csi2_rx_subsystem_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_mipi_csi2_rx_subsystem_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mipi_csi2_rx_subsystem_0_0' (76#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_mipi_csi2_rx_subsystem_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'mipi_csi2_rx_subsystem_0' of module 'design_1_mipi_csi2_rx_subsystem_0_0' requires 37 connections, but only 33 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:16298]
+INFO: [Synth 8-638] synthesizing module 'design_1_sensor_rst_gpio_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_sensor_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sensor_rst_gpio_0' (77#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_sensor_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_demosaic_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_demosaic_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_demosaic_0_0' (78#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_demosaic_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_demosaic_0' of module 'design_1_v_demosaic_0_0' requires 38 connections, but only 37 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:16335]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_frmbuf_wr_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_0' (79#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_frmbuf_wr_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_gamma_lut_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_gamma_lut_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_gamma_lut_0_0' (80#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_gamma_lut_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_gamma_lut_0' of module 'design_1_v_gamma_lut_0_0' requires 38 connections, but only 37 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:16438]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_proc_ss_csc_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_proc_ss_csc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_proc_ss_csc_0' (81#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_proc_ss_csc_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_proc_ss_scaler_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_proc_ss_scaler_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_proc_ss_scaler_0' (82#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_proc_ss_scaler_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_proc_ss_scaler' of module 'design_1_v_proc_ss_scaler_0' requires 41 connections, but only 40 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:16514]
+INFO: [Synth 8-638] synthesizing module 'design_1_vcc_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vcc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_vcc_0' (83#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vcc_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_vpss_csc_rst_gpio_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vpss_csc_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_vpss_csc_rst_gpio_0' (84#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vpss_csc_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_vpss_scaler_rst_gpio_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vpss_scaler_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_vpss_scaler_rst_gpio_0' (85#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vpss_scaler_rst_gpio_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx0_imp_WR11Y2' (86#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:15508]
+INFO: [Synth 8-638] synthesizing module 'mipi_csi2_rx1_imp_R1D07T' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:16565]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_data_fifo_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axi_data_fifo_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_data_fifo_0_1' (87#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axi_data_fifo_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_data_fifo_0' of module 'design_1_axi_data_fifo_0_1' requires 72 connections, but only 70 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17260]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_subset_converter_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axis_subset_converter_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axis_subset_converter_0_1' (88#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_axis_subset_converter_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_demosaic_rst_gpio_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_demosaic_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_demosaic_rst_gpio_1' (89#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_demosaic_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_frmbuf_wr_rst_gpio_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_frmbuf_wr_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_frmbuf_wr_rst_gpio_1' (90#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_frmbuf_wr_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_gamma_rst_gpio_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_gamma_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_gamma_rst_gpio_1' (91#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_gamma_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_mipi_csi2_rx_subsystem_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_mipi_csi2_rx_subsystem_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mipi_csi2_rx_subsystem_0_1' (92#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_mipi_csi2_rx_subsystem_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'mipi_csi2_rx_subsystem_0' of module 'design_1_mipi_csi2_rx_subsystem_0_1' requires 37 connections, but only 33 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17355]
+INFO: [Synth 8-638] synthesizing module 'design_1_sensor_rst_gpio_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_sensor_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sensor_rst_gpio_1' (93#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_sensor_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_demosaic_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_demosaic_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_demosaic_0_1' (94#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_demosaic_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_demosaic_0' of module 'design_1_v_demosaic_0_1' requires 38 connections, but only 37 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17392]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_frmbuf_wr_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1' (95#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_frmbuf_wr_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_gamma_lut_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_gamma_lut_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_gamma_lut_0_1' (96#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_gamma_lut_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_gamma_lut_0' of module 'design_1_v_gamma_lut_0_1' requires 38 connections, but only 37 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17495]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_proc_ss_csc_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_proc_ss_csc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_proc_ss_csc_1' (97#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_proc_ss_csc_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_proc_ss_scaler_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_proc_ss_scaler_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_proc_ss_scaler_1' (98#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_v_proc_ss_scaler_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_proc_ss_scaler' of module 'design_1_v_proc_ss_scaler_1' requires 41 connections, but only 40 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:17571]
+INFO: [Synth 8-638] synthesizing module 'design_1_vcc_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vcc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_vcc_1' (99#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vcc_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_vpss_csc_rst_gpio_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vpss_csc_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_vpss_csc_rst_gpio_1' (100#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vpss_csc_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_vpss_scaler_rst_gpio_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vpss_scaler_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_vpss_scaler_rst_gpio_1' (101#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_vpss_scaler_rst_gpio_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mipi_csi2_rx1_imp_R1D07T' (102#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:16565]
+INFO: [Synth 8-638] synthesizing module 'design_1_platform_interrupts_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_platform_interrupts_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_platform_interrupts_0' (103#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_platform_interrupts_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_1_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_proc_sys_reset_1_0' (104#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_proc_sys_reset_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_1' of module 'design_1_proc_sys_reset_1_0' requires 10 connections, but only 7 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:1564]
+INFO: [Synth 8-638] synthesizing module 'design_1_sensor0_iic_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_sensor0_iic_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sensor0_iic_0' (105#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_sensor0_iic_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'sensor0_iic' of module 'design_1_sensor0_iic_0' requires 27 connections, but only 26 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:1572]
+INFO: [Synth 8-638] synthesizing module 'design_1_sensor1_iic_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_sensor1_iic_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sensor1_iic_0' (106#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_sensor1_iic_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'sensor1_iic' of module 'design_1_sensor1_iic_0' requires 27 connections, but only 26 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:1599]
+INFO: [Synth 8-638] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (107#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' requires 126 connections, but only 123 given [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:1626]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (108#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [/tools/Xilinx1/Vivado/2017.3/scripts/rt/data/unisim_comp.v:22655]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (109#1) [/tools/Xilinx1/Vivado/2017.3/scripts/rt/data/unisim_comp.v:22655]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (110#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[39]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[38]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[37]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[36]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[35]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[34]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[33]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[32]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[31]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[30]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[29]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[28]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[27]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[26]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[25]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[24]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[23]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[22]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[21]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[20]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[19]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[18]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[17]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[16]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[15]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[14]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[13]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[12]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[11]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[10]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[9]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[8]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_araddr[7]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[39]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[38]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[37]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[36]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[35]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[34]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[33]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[32]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[31]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[30]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[29]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[28]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[27]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[26]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[25]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[24]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[23]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[22]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[21]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[20]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[19]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[18]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[17]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[16]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[15]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[14]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[13]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[12]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[11]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[10]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[9]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[8]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port csirxss_s_axi_awaddr[7]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_araddr[15]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_araddr[14]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_araddr[13]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_araddr[12]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_araddr[11]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_araddr[10]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_araddr[9]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_araddr[8]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_awaddr[15]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_awaddr[14]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_awaddr[13]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_awaddr[12]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_awaddr[11]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_awaddr[10]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_awaddr[9]
+WARNING: [Synth 8-3331] design mipi_csi2_rx1_imp_R1D07T has unconnected port s_axi_ctrl3_awaddr[8]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[39]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[38]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[37]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[36]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[35]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[34]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[33]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[32]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[31]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[30]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[29]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[28]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[27]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[26]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[25]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[24]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[23]
+WARNING: [Synth 8-3331] design mipi_csi2_rx0_imp_WR11Y2 has unconnected port csirxss_s_axi_araddr[22]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.750 ; gain = 0.000 ; free physical = 21948 ; free virtual = 53909
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.750 ; gain = 0.000 ; free physical = 21956 ; free virtual = 53917
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp211/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp211/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp213/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp213/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp215/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp215/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp217/design_1_interrupts0_0_in_context.xdc] for cell 'design_1_i/interrupts0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp217/design_1_interrupts0_0_in_context.xdc] for cell 'design_1_i/interrupts0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp219/design_1_platform_interrupts_0_in_context.xdc] for cell 'design_1_i/platform_interrupts'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp219/design_1_platform_interrupts_0_in_context.xdc] for cell 'design_1_i/platform_interrupts'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp221/design_1_proc_sys_reset_1_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_1'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp221/design_1_proc_sys_reset_1_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_1'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp223/design_1_sensor0_iic_0_in_context.xdc] for cell 'design_1_i/sensor0_iic'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp223/design_1_sensor0_iic_0_in_context.xdc] for cell 'design_1_i/sensor0_iic'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp225/design_1_sensor0_iic_0_in_context.xdc] for cell 'design_1_i/sensor1_iic'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp225/design_1_sensor0_iic_0_in_context.xdc] for cell 'design_1_i/sensor1_iic'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp227/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp227/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp229/design_1_axi_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/axi_data_fifo_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp229/design_1_axi_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/axi_data_fifo_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp231/design_1_axis_subset_converter_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/axis_subset_converter_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp231/design_1_axis_subset_converter_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/axis_subset_converter_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp233/design_1_demosaic_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/demosaic_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp233/design_1_demosaic_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/demosaic_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp235/design_1_frmbuf_wr_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/frmbuf_wr_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp235/design_1_frmbuf_wr_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/frmbuf_wr_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp237/design_1_gamma_rst_gpio_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/gamma_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp237/design_1_gamma_rst_gpio_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/gamma_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp249/design_1_sensor_rst_gpio_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/sensor_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp249/design_1_sensor_rst_gpio_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/sensor_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp251/design_1_v_demosaic_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_demosaic_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp251/design_1_v_demosaic_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_demosaic_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp253/design_1_v_frmbuf_wr_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_frmbuf_wr_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp253/design_1_v_frmbuf_wr_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_frmbuf_wr_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp255/design_1_v_gamma_lut_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_gamma_lut_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp255/design_1_v_gamma_lut_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_gamma_lut_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp259/design_1_v_proc_ss_csc_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_proc_ss_csc'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp259/design_1_v_proc_ss_csc_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_proc_ss_csc'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp287/design_1_v_proc_ss_scaler_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_proc_ss_scaler'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp287/design_1_v_proc_ss_scaler_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/v_proc_ss_scaler'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp289/design_1_vcc_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/vcc'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp289/design_1_vcc_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/vcc'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp291/design_1_vpss_csc_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/vpss_csc_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp291/design_1_vpss_csc_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/vpss_csc_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp293/design_1_vpss_scaler_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/vpss_scaler_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp293/design_1_vpss_scaler_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx1/vpss_scaler_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp295/design_1_axi_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/axi_data_fifo_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp295/design_1_axi_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/axi_data_fifo_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp297/design_1_axis_subset_converter_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/axis_subset_converter_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp297/design_1_axis_subset_converter_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/axis_subset_converter_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp299/design_1_demosaic_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/demosaic_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp299/design_1_demosaic_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/demosaic_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp301/design_1_frmbuf_wr_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/frmbuf_wr_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp301/design_1_frmbuf_wr_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/frmbuf_wr_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp303/design_1_gamma_rst_gpio_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/gamma_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp303/design_1_gamma_rst_gpio_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/gamma_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp315/design_1_sensor_rst_gpio_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/sensor_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp315/design_1_sensor_rst_gpio_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/sensor_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp317/design_1_v_demosaic_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_demosaic_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp317/design_1_v_demosaic_0_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_demosaic_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp319/design_1_v_frmbuf_wr_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_frmbuf_wr_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp319/design_1_v_frmbuf_wr_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_frmbuf_wr_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp321/design_1_v_gamma_lut_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_gamma_lut_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp321/design_1_v_gamma_lut_0_1_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_gamma_lut_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp325/design_1_v_proc_ss_csc_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_proc_ss_csc'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp325/design_1_v_proc_ss_csc_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_proc_ss_csc'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp353/design_1_v_proc_ss_scaler_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_proc_ss_scaler'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp353/design_1_v_proc_ss_scaler_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/v_proc_ss_scaler'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp355/design_1_vcc_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/vcc'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp355/design_1_vcc_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/vcc'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp357/design_1_vpss_csc_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/vpss_csc_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp357/design_1_vpss_csc_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/vpss_csc_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp359/design_1_vpss_scaler_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/vpss_scaler_rst_gpio'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp359/design_1_vpss_scaler_rst_gpio_0_in_context.xdc] for cell 'design_1_i/mipi_csi2_rx0/vpss_scaler_rst_gpio'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp361/design_1_xbar_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/xbar'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp361/design_1_xbar_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/xbar'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp363/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm0/xbar'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp363/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm0/xbar'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp365/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/xbar'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp365/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/xbar'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp367/design_1_tier2_xbar_0_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/tier2_xbar_0'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp367/design_1_tier2_xbar_0_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/tier2_xbar_0'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp369/design_1_tier2_xbar_1_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/tier2_xbar_1'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp369/design_1_tier2_xbar_1_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/tier2_xbar_1'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp371/design_1_tier2_xbar_2_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/tier2_xbar_2'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp371/design_1_tier2_xbar_2_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/tier2_xbar_2'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp373/design_1_m10_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m10_couplers/m10_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp373/design_1_m10_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m10_couplers/m10_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp375/design_1_m09_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m09_couplers/m09_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp375/design_1_m09_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m09_couplers/m09_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp377/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m09_couplers/auto_pc'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp377/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m09_couplers/auto_pc'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp379/design_1_m02_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m08_couplers/m08_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp379/design_1_m02_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m08_couplers/m08_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp381/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m08_couplers/auto_pc'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp381/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m08_couplers/auto_pc'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp383/design_1_m06_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m07_couplers/m07_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp383/design_1_m06_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m07_couplers/m07_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp385/design_1_m06_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m06_couplers/m06_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp385/design_1_m06_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m06_couplers/m06_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp387/design_1_m09_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m05_couplers/m05_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp387/design_1_m09_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m05_couplers/m05_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp389/design_1_m03_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m04_couplers/m04_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp389/design_1_m03_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m04_couplers/m04_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp391/design_1_m03_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m03_couplers/m03_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp391/design_1_m03_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m03_couplers/m03_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp393/design_1_m02_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m02_couplers/m02_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp393/design_1_m02_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m02_couplers/m02_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp395/design_1_m01_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m01_couplers/m01_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp395/design_1_m01_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m01_couplers/m01_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp397/design_1_m01_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp397/design_1_m01_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/m00_couplers/m00_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp399/design_1_s00_regslice_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp399/design_1_s00_regslice_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/s00_couplers/s00_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp401/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/i00_couplers/auto_pc'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp401/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm1/i00_couplers/auto_pc'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp403/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm0/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp403/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpm0/s00_couplers/auto_pc'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp405/design_1_s00_mmu_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s00_mmu'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp405/design_1_s00_mmu_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s00_mmu'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp407/design_1_s00_mmu_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s01_mmu'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp407/design_1_s00_mmu_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s01_mmu'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp409/design_1_m00_data_fifo_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/m00_couplers/m00_data_fifo'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp409/design_1_m00_data_fifo_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/m00_couplers/m00_data_fifo'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp411/design_1_m00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp411/design_1_m00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/m00_couplers/m00_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp413/design_1_s00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s01_couplers/s01_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp413/design_1_s00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s01_couplers/s01_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp415/design_1_s00_data_fifo_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s01_couplers/s01_data_fifo'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp415/design_1_s00_data_fifo_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s01_couplers/s01_data_fifo'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp417/design_1_s00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp417/design_1_s00_regslice_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s00_couplers/s00_regslice'
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp419/design_1_s00_data_fifo_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp419/design_1_s00_data_fifo_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hp1/s00_couplers/s00_data_fifo'
+Parsing XDC File [/home/ad2039/G00StereoCamera/zcu102_ds.xdc]
+WARNING: [Vivado 12-508] No pins matched '*/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT0'. [/home/ad2039/G00StereoCamera/zcu102_ds.xdc:63]
+WARNING: [Vivado 12-507] No nets matched '*/clk_wiz_1/inst/clk_out5'. [/home/ad2039/G00StereoCamera/zcu102_ds.xdc:71]
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/zcu102_ds.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/ad2039/G00StereoCamera/zcu102_ds.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ad2039/G00StereoCamera/zcu102_ds.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2296.523 ; gain = 0.000 ; free physical = 21179 ; free virtual = 53146
+WARNING: [Timing 38-316] Clock period '5.000' specified during out-of-context synthesis of instance 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0' at clock pin 'csirxss_csi_irq' is different from the actual clock period '1.389', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '5.000' specified during out-of-context synthesis of instance 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0' at clock pin 'csirxss_csi_irq' is different from the actual clock period '1.389', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.523 ; gain = 790.773 ; free physical = 21270 ; free virtual = 53238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.523 ; gain = 790.773 ; free physical = 21270 ; free virtual = 53238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_clk_n. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_clk_n. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_clk_p. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_clk_p. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_n[0]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_n[0]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_n[1]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_n[1]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_n[2]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_n[2]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_n[3]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_n[3]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_p[0]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_p[0]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_p[1]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_p[1]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_p[2]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_p[2]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_p[3]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if1_data_p[3]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp247/design_1_mipi_csi2_rx_subsystem_0_1_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_clk_n. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_clk_n. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_clk_p. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_clk_p. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_n[0]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_n[0]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_n[1]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_n[1]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_n[2]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_n[2]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_n[3]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_n[3]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_p[0]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_p[0]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_p[1]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_p[1]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_p[2]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_p[2]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_p[3]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for csi_mipi_phy_if0_data_p[3]. (constraint file  /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/.Xil/Vivado-1004-ad2039/dcp313/design_1_mipi_csi2_rx_subsystem_0_0_in_context.xdc, line 34).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_intc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/m00_couplers/m00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/s00_mmu. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/s01_couplers/s01_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/s01_couplers/s01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/s01_mmu. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hp1/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/i00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m02_couplers/m02_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m03_couplers/m03_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m04_couplers/m04_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m05_couplers/m05_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m06_couplers/m06_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m07_couplers/m07_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m08_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m08_couplers/m08_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m09_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m09_couplers/m09_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/m10_couplers/m10_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/tier2_xbar_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/tier2_xbar_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/tier2_xbar_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_hpm1/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/interrupts0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/axi_data_fifo_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/axis_subset_converter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/demosaic_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/frmbuf_wr_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/gamma_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/sensor_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/v_demosaic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/v_frmbuf_wr_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/v_gamma_lut_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/v_proc_ss_csc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/v_proc_ss_scaler. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/vcc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/vpss_csc_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx0/vpss_scaler_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/axi_data_fifo_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/axis_subset_converter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/demosaic_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/frmbuf_wr_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/gamma_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/sensor_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/v_demosaic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/v_frmbuf_wr_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/v_gamma_lut_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/v_proc_ss_csc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/v_proc_ss_scaler. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/vcc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/vpss_csc_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mipi_csi2_rx1/vpss_scaler_rst_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/platform_interrupts. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/proc_sys_reset_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/sensor0_iic. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/sensor1_iic. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2296.523 ; gain = 790.773 ; free physical = 21273 ; free virtual = 53241
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2296.523 ; gain = 790.773 ; free physical = 21270 ; free virtual = 53238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2296.523 ; gain = 790.773 ; free physical = 21260 ; free virtual = 53228
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out1' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_1_i/clk_wiz_1/clk_in1' to 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out2' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_1_i/clk_wiz_1/clk_in1' to 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out3' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_1_i/clk_wiz_1/clk_in1' to 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out4' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out4/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_1_i/clk_wiz_1/clk_in1' to 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out5' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out5/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_1_i/clk_wiz_1/clk_in1' to 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/zynq_ultra_ps_e_0/pl_clk0' to pin 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/clkoutphy_out' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_clkoutphy_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/csirxss_csi_irq' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_csirxss_csi_irq/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/csirxss_s_axi_arready' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_arready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/csirxss_s_axi_awready' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_awready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/csirxss_s_axi_bvalid' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_bvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/csirxss_s_axi_rvalid' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_rvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/csirxss_s_axi_wready' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_wready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/pll_lock_out' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_pll_lock_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/rxbyteclkhs' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_rxbyteclkhs/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/system_rst_out' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_system_rst_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/video_out_tlast' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_video_out_tlast/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/video_out_tuser' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_video_out_tuser/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/video_out_tvalid' to pin 'design_1_i/mipi_csi2_rx1/mipi_csi2_rx_subsystem_0/bbstub_video_out_tvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/v_proc_ss_scaler/m_axis_tvalid' to pin 'design_1_i/mipi_csi2_rx1/v_proc_ss_scaler/bbstub_m_axis_tvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx1/v_proc_ss_scaler/s_axis_tready' to pin 'design_1_i/mipi_csi2_rx1/v_proc_ss_scaler/bbstub_s_axis_tready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/clkoutphy_out' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_clkoutphy_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/csirxss_csi_irq' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_csirxss_csi_irq/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/csirxss_s_axi_arready' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_arready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/csirxss_s_axi_awready' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_awready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/csirxss_s_axi_bvalid' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_bvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/csirxss_s_axi_rvalid' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_rvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/csirxss_s_axi_wready' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_csirxss_s_axi_wready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/pll_lock_out' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_pll_lock_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/rxbyteclkhs' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_rxbyteclkhs/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/system_rst_out' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_system_rst_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/video_out_tlast' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_video_out_tlast/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/video_out_tuser' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_video_out_tuser/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/video_out_tvalid' to pin 'design_1_i/mipi_csi2_rx0/mipi_csi2_rx_subsystem_0/bbstub_video_out_tvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/v_proc_ss_scaler/m_axis_tvalid' to pin 'design_1_i/mipi_csi2_rx0/v_proc_ss_scaler/bbstub_m_axis_tvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mipi_csi2_rx0/v_proc_ss_scaler/s_axis_tready' to pin 'design_1_i/mipi_csi2_rx0/v_proc_ss_scaler/bbstub_s_axis_tready/O'
+INFO: [Synth 8-5819] Moved 37 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 2873.523 ; gain = 1367.773 ; free physical = 20537 ; free virtual = 52499
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 2875.523 ; gain = 1369.773 ; free physical = 20536 ; free virtual = 52497
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 2893.102 ; gain = 1387.352 ; free physical = 20531 ; free virtual = 52492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2893.102 ; gain = 1387.352 ; free physical = 20530 ; free virtual = 52492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2893.102 ; gain = 1387.352 ; free physical = 20530 ; free virtual = 52492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2893.102 ; gain = 1387.352 ; free physical = 20530 ; free virtual = 52492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2893.102 ; gain = 1387.352 ; free physical = 20530 ; free virtual = 52492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2893.102 ; gain = 1387.352 ; free physical = 20530 ; free virtual = 52492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2893.102 ; gain = 1387.352 ; free physical = 20530 ; free virtual = 52492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |design_1_s00_mmu_0                  |         1|
+|2     |design_1_s01_mmu_0                  |         1|
+|3     |design_1_xbar_0                     |         1|
+|4     |design_1_m00_data_fifo_0            |         1|
+|5     |design_1_m00_regslice_0             |         1|
+|6     |design_1_s00_data_fifo_0            |         1|
+|7     |design_1_s00_regslice_0             |         1|
+|8     |design_1_s01_data_fifo_0            |         1|
+|9     |design_1_s01_regslice_0             |         1|
+|10    |design_1_xbar_1                     |         1|
+|11    |design_1_auto_pc_0                  |         1|
+|12    |design_1_tier2_xbar_0_0             |         1|
+|13    |design_1_tier2_xbar_1_0             |         1|
+|14    |design_1_tier2_xbar_2_0             |         1|
+|15    |design_1_xbar_2                     |         1|
+|16    |design_1_auto_pc_1                  |         1|
+|17    |design_1_m00_regslice_1             |         1|
+|18    |design_1_m01_regslice_0             |         1|
+|19    |design_1_m02_regslice_0             |         1|
+|20    |design_1_m03_regslice_0             |         1|
+|21    |design_1_m04_regslice_0             |         1|
+|22    |design_1_m05_regslice_0             |         1|
+|23    |design_1_m06_regslice_0             |         1|
+|24    |design_1_m07_regslice_0             |         1|
+|25    |design_1_auto_pc_2                  |         1|
+|26    |design_1_m08_regslice_0             |         1|
+|27    |design_1_auto_pc_3                  |         1|
+|28    |design_1_m09_regslice_0             |         1|
+|29    |design_1_m10_regslice_0             |         1|
+|30    |design_1_s00_regslice_1             |         1|
+|31    |design_1_axi_gpio_0_0               |         1|
+|32    |design_1_axi_intc_0_0               |         1|
+|33    |design_1_clk_wiz_1_0                |         1|
+|34    |design_1_interrupts0_0              |         1|
+|35    |design_1_platform_interrupts_0      |         1|
+|36    |design_1_proc_sys_reset_1_0         |         1|
+|37    |design_1_sensor0_iic_0              |         1|
+|38    |design_1_sensor1_iic_0              |         1|
+|39    |design_1_zynq_ultra_ps_e_0_0        |         1|
+|40    |design_1_axi_data_fifo_0_0          |         1|
+|41    |design_1_axis_subset_converter_0_0  |         1|
+|42    |design_1_demosaic_rst_gpio_0        |         1|
+|43    |design_1_frmbuf_wr_rst_gpio_0       |         1|
+|44    |design_1_gamma_rst_gpio_0           |         1|
+|45    |design_1_mipi_csi2_rx_subsystem_0_0 |         1|
+|46    |design_1_sensor_rst_gpio_0          |         1|
+|47    |design_1_v_demosaic_0_0             |         1|
+|48    |design_1_v_frmbuf_wr_0_0            |         1|
+|49    |design_1_v_gamma_lut_0_0            |         1|
+|50    |design_1_v_proc_ss_csc_0            |         1|
+|51    |design_1_v_proc_ss_scaler_0         |         1|
+|52    |design_1_vcc_0                      |         1|
+|53    |design_1_vpss_csc_rst_gpio_0        |         1|
+|54    |design_1_vpss_scaler_rst_gpio_0     |         1|
+|55    |design_1_axi_data_fifo_0_1          |         1|
+|56    |design_1_axis_subset_converter_0_1  |         1|
+|57    |design_1_demosaic_rst_gpio_1        |         1|
+|58    |design_1_frmbuf_wr_rst_gpio_1       |         1|
+|59    |design_1_gamma_rst_gpio_1           |         1|
+|60    |design_1_mipi_csi2_rx_subsystem_0_1 |         1|
+|61    |design_1_sensor_rst_gpio_1          |         1|
+|62    |design_1_v_demosaic_0_1             |         1|
+|63    |design_1_v_frmbuf_wr_0_1            |         1|
+|64    |design_1_v_gamma_lut_0_1            |         1|
+|65    |design_1_v_proc_ss_csc_1            |         1|
+|66    |design_1_v_proc_ss_scaler_1         |         1|
+|67    |design_1_vcc_1                      |         1|
+|68    |design_1_vpss_csc_rst_gpio_1        |         1|
+|69    |design_1_vpss_scaler_rst_gpio_1     |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |design_1_auto_pc_0                  |     1|
+|2     |design_1_auto_pc_1                  |     1|
+|3     |design_1_auto_pc_2                  |     1|
+|4     |design_1_auto_pc_3                  |     1|
+|5     |design_1_axi_data_fifo_0_0          |     1|
+|6     |design_1_axi_data_fifo_0_1          |     1|
+|7     |design_1_axi_gpio_0_0               |     1|
+|8     |design_1_axi_intc_0_0               |     1|
+|9     |design_1_axis_subset_converter_0_0  |     1|
+|10    |design_1_axis_subset_converter_0_1  |     1|
+|11    |design_1_clk_wiz_1_0                |     1|
+|12    |design_1_demosaic_rst_gpio_0        |     1|
+|13    |design_1_demosaic_rst_gpio_1        |     1|
+|14    |design_1_frmbuf_wr_rst_gpio_0       |     1|
+|15    |design_1_frmbuf_wr_rst_gpio_1       |     1|
+|16    |design_1_gamma_rst_gpio_0           |     1|
+|17    |design_1_gamma_rst_gpio_1           |     1|
+|18    |design_1_interrupts0_0              |     1|
+|19    |design_1_m00_data_fifo_0            |     1|
+|20    |design_1_m00_regslice_0             |     1|
+|21    |design_1_m00_regslice_1             |     1|
+|22    |design_1_m01_regslice_0             |     1|
+|23    |design_1_m02_regslice_0             |     1|
+|24    |design_1_m03_regslice_0             |     1|
+|25    |design_1_m04_regslice_0             |     1|
+|26    |design_1_m05_regslice_0             |     1|
+|27    |design_1_m06_regslice_0             |     1|
+|28    |design_1_m07_regslice_0             |     1|
+|29    |design_1_m08_regslice_0             |     1|
+|30    |design_1_m09_regslice_0             |     1|
+|31    |design_1_m10_regslice_0             |     1|
+|32    |design_1_mipi_csi2_rx_subsystem_0_0 |     1|
+|33    |design_1_mipi_csi2_rx_subsystem_0_1 |     1|
+|34    |design_1_platform_interrupts_0      |     1|
+|35    |design_1_proc_sys_reset_1_0         |     1|
+|36    |design_1_s00_data_fifo_0            |     1|
+|37    |design_1_s00_mmu_0                  |     1|
+|38    |design_1_s00_regslice_0             |     1|
+|39    |design_1_s00_regslice_1             |     1|
+|40    |design_1_s01_data_fifo_0            |     1|
+|41    |design_1_s01_mmu_0                  |     1|
+|42    |design_1_s01_regslice_0             |     1|
+|43    |design_1_sensor0_iic_0              |     1|
+|44    |design_1_sensor1_iic_0              |     1|
+|45    |design_1_sensor_rst_gpio_0          |     1|
+|46    |design_1_sensor_rst_gpio_1          |     1|
+|47    |design_1_tier2_xbar_0_0             |     1|
+|48    |design_1_tier2_xbar_1_0             |     1|
+|49    |design_1_tier2_xbar_2_0             |     1|
+|50    |design_1_v_demosaic_0_0             |     1|
+|51    |design_1_v_demosaic_0_1             |     1|
+|52    |design_1_v_frmbuf_wr_0_0            |     1|
+|53    |design_1_v_frmbuf_wr_0_1            |     1|
+|54    |design_1_v_gamma_lut_0_0            |     1|
+|55    |design_1_v_gamma_lut_0_1            |     1|
+|56    |design_1_v_proc_ss_csc_0            |     1|
+|57    |design_1_v_proc_ss_csc_1            |     1|
+|58    |design_1_v_proc_ss_scaler_0         |     1|
+|59    |design_1_v_proc_ss_scaler_1         |     1|
+|60    |design_1_vcc_0                      |     1|
+|61    |design_1_vcc_1                      |     1|
+|62    |design_1_vpss_csc_rst_gpio_0        |     1|
+|63    |design_1_vpss_csc_rst_gpio_1        |     1|
+|64    |design_1_vpss_scaler_rst_gpio_0     |     1|
+|65    |design_1_vpss_scaler_rst_gpio_1     |     1|
+|66    |design_1_xbar_0                     |     1|
+|67    |design_1_xbar_1                     |     1|
+|68    |design_1_xbar_2                     |     1|
+|69    |design_1_zynq_ultra_ps_e_0_0        |     1|
+|70    |IBUF                                |     5|
+|71    |IOBUF                               |     4|
+|72    |OBUF                                |     6|
++------+------------------------------------+------+
+
+Report Instance Areas: 
++------+--------------------------+---------------------------------+------+
+|      |Instance                  |Module                           |Cells |
++------+--------------------------+---------------------------------+------+
+|1     |top                       |                                 | 14808|
+|2     |  design_1_i              |design_1                         | 14793|
+|3     |    axi_interconnect_hp1  |design_1_axi_interconnect_hp1_0  |  3894|
+|4     |      m00_couplers        |m00_couplers_imp_12NH6JI         |   896|
+|5     |      s00_couplers        |s00_couplers_imp_VR4BH8          |   820|
+|6     |      s01_couplers        |s01_couplers_imp_17LKIRH         |   820|
+|7     |    axi_interconnect_hpm0 |design_1_axi_interconnect_hpm0_0 |  1004|
+|8     |      s00_couplers        |s00_couplers_imp_CFKE2W          |   201|
+|9     |    axi_interconnect_hpm1 |design_1_axi_interconnect_hpm1_0 |  6338|
+|10    |      i00_couplers        |i00_couplers_imp_12WIQ37         |   169|
+|11    |      m00_couplers        |m00_couplers_imp_1I28URU         |   100|
+|12    |      m01_couplers        |m01_couplers_imp_CMWD9N          |   100|
+|13    |      m02_couplers        |m02_couplers_imp_1J88H1L         |   124|
+|14    |      m03_couplers        |m03_couplers_imp_B7967C          |   114|
+|15    |      m04_couplers        |m04_couplers_imp_1JW513G         |   114|
+|16    |      m05_couplers        |m05_couplers_imp_AKWPPP          |   102|
+|17    |      m06_couplers        |m06_couplers_imp_1KS4DVZ         |   120|
+|18    |      m07_couplers        |m07_couplers_imp_9Z7L4E          |   120|
+|19    |      m08_couplers        |m08_couplers_imp_1N8YPJA         |   249|
+|20    |      m09_couplers        |m09_couplers_imp_GBWF1J          |   271|
+|21    |      m10_couplers        |m10_couplers_imp_5W1V2Q          |   254|
+|22    |      s00_couplers        |s00_couplers_imp_GMC7M0          |   318|
+|23    |    mipi_csi2_rx0         |mipi_csi2_rx0_imp_WR11Y2         |  1274|
+|24    |    mipi_csi2_rx1         |mipi_csi2_rx1_imp_R1D07T         |  1274|
++------+--------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2893.102 ; gain = 1387.352 ; free physical = 20530 ; free virtual = 52492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 2893.102 ; gain = 596.578 ; free physical = 20568 ; free virtual = 52529
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2893.109 ; gain = 1387.352 ; free physical = 20575 ; free virtual = 52537
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 5 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+280 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 2931.734 ; gain = 1425.984 ; free physical = 20539 ; free virtual = 52500
+INFO: [Common 17-1381] The checkpoint '/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2931.734 ; gain = 0.000 ; free physical = 20535 ; free virtual = 52497
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 24 19:24:14 2021...

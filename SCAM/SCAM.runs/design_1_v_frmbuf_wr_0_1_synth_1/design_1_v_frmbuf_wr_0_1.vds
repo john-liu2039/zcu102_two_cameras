@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 24 19:11:15 2021
+# Process ID: 19719
+# Current directory: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_v_frmbuf_wr_0_1_synth_1
+# Command line: vivado -log design_1_v_frmbuf_wr_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_v_frmbuf_wr_0_1.tcl
+# Log file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_v_frmbuf_wr_0_1_synth_1/design_1_v_frmbuf_wr_0_1.vds
+# Journal file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_v_frmbuf_wr_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_v_frmbuf_wr_0_1.tcl -notrace
+compile_c: Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 1475.371 ; gain = 0.000 ; free physical = 2079 ; free virtual = 34588
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1496.746 ; gain = 0.000 ; free physical = 3471 ; free virtual = 34238
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/synth/design_1_v_frmbuf_wr_0_1.v:58]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_CTRL_s_axi' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_CTRL_s_axi.v:9]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_CTRL_s_axi' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_CTRL_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:10]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_throttl' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:689]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_throttl' (2#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:689]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_write' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:1504]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo' (3#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_reg_slice' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:295]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_reg_slice' (4#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:295]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo__parameterized0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo__parameterized0' (4#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_buffer' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:508]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_buffer' (5#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:508]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo__parameterized1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo__parameterized1' (5#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo__parameterized2' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo__parameterized2' (5#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_write' (6#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:1504]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_read' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:741]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_buffer__parameterized0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:508]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_buffer__parameterized0' (6#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:508]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_reg_slice__parameterized0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:295]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_reg_slice__parameterized0' (6#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:295]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo__parameterized3' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_fifo__parameterized3' (6#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:399]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi_read' (7#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:741]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi' (8#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mm_video_m_axi.v:10]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_Block_proc4_BYTESbkb' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Block_proc4_BYTESbkb.v:43]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_Block_proc4_BYTESbkb_rom' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Block_proc4_BYTESbkb.v:9]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_Block_proc4_BYTESbkb_rom' (9#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Block_proc4_BYTESbkb.v:9]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_Block_proc4_BYTESbkb' (10#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Block_proc4_BYTESbkb.v:43]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_Block_proc4_MEMORcud' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Block_proc4_MEMORcud.v:43]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_Block_proc4_MEMORcud_rom' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Block_proc4_MEMORcud.v:9]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_Block_proc4_MEMORcud_rom' (11#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Block_proc4_MEMORcud.v:9]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_Block_proc4_MEMORcud' (12#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Block_proc4_MEMORcud.v:43]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_AXIvideo2MultiPixStr' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_AXIvideo2MultiPixStr.v:10]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_reg_unsigned_short_s' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_reg_unsigned_short_s.v:10]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_reg_unsigned_short_s' (14#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_reg_unsigned_short_s.v:10]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_AXIvideo2MultiPixStr' (15#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_AXIvideo2MultiPixStr.v:10]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mul_mdEe' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mul_mdEe.v:14]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mul_mdEe_DSP48_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mul_mdEe.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mul_mdEe_DSP48_0' (16#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mul_mdEe.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mul_mdEe' (17#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_v_frmbuf_wr_mul_mdEe.v:14]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_MultiPixStream2Bytes' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_MultiPixStream2Bytes.v:10]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_MultiPixStream2Bytes' (19#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_MultiPixStream2Bytes.v:10]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_Bytes2AXIMMvideo' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Bytes2AXIMMvideo.v:10]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_Bytes2AXIMMvideo' (20#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_Bytes2AXIMMvideo.v:10]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w12_d1_A' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w12_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w12_d1_A_shiftReg' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w12_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w12_d1_A_shiftReg' (21#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w12_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w12_d1_A' (22#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w12_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w32_d3_A' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w32_d3_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w32_d3_A_shiftReg' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w32_d3_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w32_d3_A_shiftReg' (23#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w32_d3_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w32_d3_A' (24#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w32_d3_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w16_d2_A' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w16_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w16_d2_A_shiftReg' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w16_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w16_d2_A_shiftReg' (25#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w16_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w16_d2_A' (26#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w16_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w8_d2_A' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w8_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w8_d2_A_shiftReg' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w8_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w8_d2_A_shiftReg' (27#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w8_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w8_d2_A' (28#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w8_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w12_d2_A' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w12_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w12_d2_A_shiftReg' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w12_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w12_d2_A_shiftReg' (29#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w12_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w12_d2_A' (30#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w12_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w8_d1_A' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w8_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w8_d1_A_shiftReg' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w8_d1_A_shiftReg' (31#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w8_d1_A' (32#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w8_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w16_d1_A' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w16_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w16_d1_A_shiftReg' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w16_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w16_d1_A_shiftReg' (33#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w16_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w16_d1_A' (34#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w16_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w128_d480_B' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w128_d480_B.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1_fifo_w128_d480_B' (35#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/hdl/verilog/design_1_v_frmbuf_wr_0_1_fifo_w128_d480_B.v:11]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_frmbuf_wr_0_1' (37#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_1/synth/design_1_v_frmbuf_wr_0_1.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1496.746 ; gain = 0.000 ; free physical = 12878 ; free virtual = 43649
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.746 ; gain = 0.000 ; free physical = 13160 ; free virtual = 43931
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.40 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2220.809 ; gain = 8.000 ; free physical = 15549 ; free virtual = 46310
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 2220.809 ; gain = 724.062 ; free physical = 17888 ; free virtual = 48730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 2220.809 ; gain = 724.062 ; free physical = 17888 ; free virtual = 48730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 2220.809 ; gain = 724.062 ; free physical = 17888 ; free virtual = 48730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 2220.809 ; gain = 724.062 ; free physical = 17596 ; free virtual = 48448
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 2220.809 ; gain = 724.062 ; free physical = 13886 ; free virtual = 44724
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:41 . Memory (MB): peak = 2835.785 ; gain = 1339.039 ; free physical = 9790 ; free virtual = 40633
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:46 . Memory (MB): peak = 2933.020 ; gain = 1436.273 ; free physical = 10466 ; free virtual = 41309
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:49 . Memory (MB): peak = 2947.363 ; gain = 1450.617 ; free physical = 9904 ; free virtual = 40747
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:50 . Memory (MB): peak = 2947.363 ; gain = 1450.617 ; free physical = 9775 ; free virtual = 40618
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:50 . Memory (MB): peak = 2947.363 ; gain = 1450.617 ; free physical = 9772 ; free virtual = 40615
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:50 . Memory (MB): peak = 2947.363 ; gain = 1450.617 ; free physical = 9660 ; free virtual = 40499
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:50 . Memory (MB): peak = 2947.363 ; gain = 1450.617 ; free physical = 9651 ; free virtual = 40490
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:50 . Memory (MB): peak = 2947.363 ; gain = 1450.617 ; free physical = 9612 ; free virtual = 40452
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:50 . Memory (MB): peak = 2947.363 ; gain = 1450.617 ; free physical = 9620 ; free virtual = 40459
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    53|
+|2     |DSP_ALU         |     1|
+|3     |DSP_A_B_DATA    |     1|
+|4     |DSP_C_DATA      |     1|
+|5     |DSP_MULTIPLIER  |     1|
+|6     |DSP_M_DATA      |     1|
+|7     |DSP_OUTPUT      |     1|
+|8     |DSP_PREADD      |     1|
+|9     |DSP_PREADD_DATA |     1|
+|10    |LUT1            |    71|
+|11    |LUT2            |   203|
+|12    |LUT3            |   665|
+|13    |LUT4            |   371|
+|14    |LUT5            |   527|
+|15    |LUT6            |   749|
+|16    |MUXF7           |    90|
+|17    |MUXF8           |    45|
+|18    |RAMB36E2        |     4|
+|19    |SRL16E          |    55|
+|20    |SRLC32E         |   180|
+|21    |FDRE            |  3625|
+|22    |FDSE            |    48|
++------+----------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:50 . Memory (MB): peak = 2947.363 ; gain = 1450.617 ; free physical = 9618 ; free virtual = 40457
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:53 . Memory (MB): peak = 2979.379 ; gain = 1504.008 ; free physical = 8746 ; free virtual = 39585

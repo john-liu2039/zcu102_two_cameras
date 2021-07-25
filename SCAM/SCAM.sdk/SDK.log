@@ -1,0 +1,574 @@
+21:08:37 INFO  : Registering command handlers for SDK TCF services
+21:08:39 INFO  : Launching XSCT server: xsct -n -interactive /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/temp_xsdb_launch_script.tcl
+21:08:40 INFO  : XSCT server has started successfully.
+21:08:40 INFO  : Successfully done setting XSCT server connection channel  
+21:08:40 INFO  : Successfully done setting SDK workspace  
+21:08:40 INFO  : Processing command line option -hwspec /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper.hdf.
+21:14:57 INFO  : Refreshed build settings on project scam
+21:28:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:28:25 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+21:28:25 INFO  : 'jtag frequency' command is executed.
+21:28:25 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+21:28:25 INFO  : Context for 'APU' is selected.
+21:28:26 INFO  : System reset is completed.
+21:28:29 INFO  : 'after 3000' command is executed.
+21:28:29 INFO  : Context for 'APU' is selected.
+21:28:29 INFO  : Cleared APU and A53 resets
+21:28:29 INFO  : Context for 'RPU' is selected.
+21:28:29 INFO  : Cleared RPU and R5 resets
+21:28:29 INFO  : Split mode is enabled for R5#1
+21:28:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0' command is executed.
+21:28:35 INFO  : FPGA configured successfully with bitstream "/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:28:35 INFO  : Context for 'APU' is selected.
+21:28:35 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:28:35 INFO  : 'configparams force-mem-access 1' command is executed.
+21:28:35 INFO  : Context for 'APU' is selected.
+21:28:35 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+21:28:36 INFO  : 'psu_init' command is executed.
+21:28:37 INFO  : 'after 1000' command is executed.
+21:28:37 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+21:28:38 INFO  : 'after 1000' command is executed.
+21:28:38 INFO  : 'psu_ps_pl_reset_config' command is executed.
+21:28:38 INFO  : 'catch {psu_protection}' command is executed.
+21:28:38 INFO  : 'configparams force-mem-access 0' command is executed.
+21:28:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+clear_rpu_reset
+enable_split_mode
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0
+fpga -file /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:28:38 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+21:33:29 INFO  : Disconnected from the channel tcfchan#1.
+21:33:51 INFO  : Registering command handlers for SDK TCF services
+21:33:51 INFO  : Launching XSCT server: xsct -n -interactive /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/temp_xsdb_launch_script.tcl
+21:33:52 INFO  : XSCT server has started successfully.
+21:33:52 INFO  : Successfully done setting XSCT server connection channel  
+21:33:52 INFO  : Successfully done setting SDK workspace  
+21:33:52 INFO  : Processing command line option -hwspec /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper.hdf.
+21:36:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:36:15 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+21:36:15 INFO  : 'jtag frequency' command is executed.
+21:36:15 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+21:36:15 INFO  : Context for 'APU' is selected.
+21:36:16 INFO  : System reset is completed.
+21:36:19 INFO  : 'after 3000' command is executed.
+21:36:19 INFO  : Context for 'APU' is selected.
+21:36:19 INFO  : Cleared APU and A53 resets
+21:36:19 INFO  : Context for 'RPU' is selected.
+21:36:19 INFO  : Cleared RPU and R5 resets
+21:36:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0' command is executed.
+21:36:37 INFO  : FPGA configured successfully with bitstream "/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:36:37 INFO  : Context for 'APU' is selected.
+21:36:37 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:36:37 INFO  : 'configparams force-mem-access 1' command is executed.
+21:36:37 INFO  : Context for 'APU' is selected.
+21:36:37 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+21:36:38 INFO  : 'psu_init' command is executed.
+21:36:39 INFO  : 'after 1000' command is executed.
+21:36:39 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+21:36:40 INFO  : 'after 1000' command is executed.
+21:36:40 INFO  : 'psu_ps_pl_reset_config' command is executed.
+21:36:40 INFO  : 'catch {psu_protection}' command is executed.
+21:36:40 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:36:40 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:36:41 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:36:41 INFO  : 'configparams force-mem-access 0' command is executed.
+21:36:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0
+fpga -file /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:36:41 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:36:41 INFO  : 'con' command is executed.
+21:36:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+21:36:41 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+21:43:08 INFO  : Disconnected from the channel tcfchan#1.
+21:43:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:12 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+21:43:12 INFO  : 'jtag frequency' command is executed.
+21:43:12 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+21:43:12 INFO  : Context for 'APU' is selected.
+21:43:13 INFO  : System reset is completed.
+21:43:16 INFO  : 'after 3000' command is executed.
+21:43:16 INFO  : Context for 'APU' is selected.
+21:43:16 INFO  : Cleared APU and A53 resets
+21:43:16 INFO  : Context for 'RPU' is selected.
+21:43:16 INFO  : Cleared RPU and R5 resets
+21:43:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0' command is executed.
+21:43:29 INFO  : FPGA configured successfully with bitstream "/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:43:29 INFO  : Context for 'APU' is selected.
+21:43:29 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:43:29 INFO  : 'configparams force-mem-access 1' command is executed.
+21:43:29 INFO  : Context for 'APU' is selected.
+21:43:29 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+21:43:30 INFO  : 'psu_init' command is executed.
+21:43:31 INFO  : 'after 1000' command is executed.
+21:43:31 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+21:43:32 INFO  : 'after 1000' command is executed.
+21:43:32 INFO  : 'psu_ps_pl_reset_config' command is executed.
+21:43:32 INFO  : 'catch {psu_protection}' command is executed.
+21:43:32 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:43:32 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:43:33 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:43:33 INFO  : 'configparams force-mem-access 0' command is executed.
+21:43:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0
+fpga -file /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:43:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:43:33 INFO  : 'con' command is executed.
+21:43:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+21:43:33 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+21:48:50 INFO  : Disconnected from the channel tcfchan#2.
+21:48:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:54 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+21:48:54 INFO  : 'jtag frequency' command is executed.
+21:48:54 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+21:48:55 INFO  : Context for 'APU' is selected.
+21:48:55 INFO  : System reset is completed.
+21:48:58 INFO  : 'after 3000' command is executed.
+21:48:58 INFO  : Context for 'APU' is selected.
+21:48:58 INFO  : Cleared APU and A53 resets
+21:48:58 INFO  : Context for 'RPU' is selected.
+21:48:59 INFO  : Cleared RPU and R5 resets
+21:48:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0' command is executed.
+21:49:13 INFO  : FPGA configured successfully with bitstream "/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:49:13 INFO  : Context for 'APU' is selected.
+21:49:13 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:49:13 INFO  : 'configparams force-mem-access 1' command is executed.
+21:49:13 INFO  : Context for 'APU' is selected.
+21:49:13 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+21:49:14 INFO  : 'psu_init' command is executed.
+21:49:15 INFO  : 'after 1000' command is executed.
+21:49:15 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+21:49:16 INFO  : 'after 1000' command is executed.
+21:49:16 INFO  : 'psu_ps_pl_reset_config' command is executed.
+21:49:16 INFO  : 'catch {psu_protection}' command is executed.
+21:49:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:49:16 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:49:17 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:49:17 INFO  : 'configparams force-mem-access 0' command is executed.
+21:49:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0
+fpga -file /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:49:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:49:17 INFO  : 'con' command is executed.
+21:49:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+21:49:17 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+21:56:20 INFO  : Disconnected from the channel tcfchan#3.
+21:56:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:56:24 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+21:56:24 INFO  : 'jtag frequency' command is executed.
+21:56:24 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+21:56:24 INFO  : Context for 'APU' is selected.
+21:56:24 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:56:24 INFO  : 'configparams force-mem-access 1' command is executed.
+21:56:24 INFO  : Context for 'APU' is selected.
+21:56:24 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+21:56:25 INFO  : 'psu_init' command is executed.
+21:56:26 INFO  : 'after 1000' command is executed.
+21:56:26 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+21:56:27 INFO  : 'after 1000' command is executed.
+21:56:27 INFO  : 'psu_ps_pl_reset_config' command is executed.
+21:56:27 INFO  : 'catch {psu_protection}' command is executed.
+21:56:27 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:56:27 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:56:28 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:56:28 INFO  : 'configparams force-mem-access 0' command is executed.
+21:56:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:56:28 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:56:28 INFO  : 'con' command is executed.
+21:56:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+21:56:28 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+22:02:00 INFO  : Disconnected from the channel tcfchan#4.
+22:02:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:02:05 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+22:02:05 INFO  : 'jtag frequency' command is executed.
+22:02:05 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+22:02:05 INFO  : Context for 'APU' is selected.
+22:02:05 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:02:05 INFO  : 'configparams force-mem-access 1' command is executed.
+22:02:05 INFO  : Context for 'APU' is selected.
+22:02:05 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+22:02:05 INFO  : 'psu_init' command is executed.
+22:02:06 INFO  : 'after 1000' command is executed.
+22:02:06 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+22:02:07 INFO  : 'after 1000' command is executed.
+22:02:07 INFO  : 'psu_ps_pl_reset_config' command is executed.
+22:02:07 INFO  : 'catch {psu_protection}' command is executed.
+22:02:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:02:07 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:02:09 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:02:09 INFO  : 'configparams force-mem-access 0' command is executed.
+22:02:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:02:09 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:02:09 INFO  : 'con' command is executed.
+22:02:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+22:02:09 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+22:04:04 INFO  : Disconnected from the channel tcfchan#5.
+22:04:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:04:09 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+22:04:09 INFO  : 'jtag frequency' command is executed.
+22:04:09 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+22:04:09 INFO  : Context for 'APU' is selected.
+22:04:09 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:04:09 INFO  : 'configparams force-mem-access 1' command is executed.
+22:04:09 INFO  : Context for 'APU' is selected.
+22:04:09 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+22:04:09 INFO  : 'psu_init' command is executed.
+22:04:10 INFO  : 'after 1000' command is executed.
+22:04:10 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+22:04:11 INFO  : 'after 1000' command is executed.
+22:04:11 INFO  : 'psu_ps_pl_reset_config' command is executed.
+22:04:11 INFO  : 'catch {psu_protection}' command is executed.
+22:04:11 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:04:11 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:04:13 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:04:13 INFO  : 'configparams force-mem-access 0' command is executed.
+22:04:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:04:13 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:04:13 INFO  : 'con' command is executed.
+22:04:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+22:04:13 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+22:07:41 INFO  : Disconnected from the channel tcfchan#6.
+22:07:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:07:46 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+22:07:46 INFO  : 'jtag frequency' command is executed.
+22:07:46 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+22:07:46 INFO  : Context for 'APU' is selected.
+22:07:46 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:07:46 INFO  : 'configparams force-mem-access 1' command is executed.
+22:07:46 INFO  : Context for 'APU' is selected.
+22:07:46 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+22:07:46 INFO  : 'psu_init' command is executed.
+22:07:47 INFO  : 'after 1000' command is executed.
+22:07:48 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+22:07:49 INFO  : 'after 1000' command is executed.
+22:07:49 INFO  : 'psu_ps_pl_reset_config' command is executed.
+22:07:49 INFO  : 'catch {psu_protection}' command is executed.
+22:07:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:07:49 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:07:50 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:07:50 INFO  : 'configparams force-mem-access 0' command is executed.
+22:07:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:07:50 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:07:50 INFO  : 'con' command is executed.
+22:07:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+22:07:50 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+22:09:16 INFO  : Disconnected from the channel tcfchan#7.
+22:09:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:09:20 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+22:09:20 INFO  : 'jtag frequency' command is executed.
+22:09:20 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+22:09:20 INFO  : Context for 'APU' is selected.
+22:09:21 INFO  : System reset is completed.
+22:09:24 INFO  : 'after 3000' command is executed.
+22:09:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0' command is executed.
+22:09:36 INFO  : FPGA configured successfully with bitstream "/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:09:36 INFO  : Context for 'APU' is selected.
+22:09:36 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:09:36 INFO  : 'configparams force-mem-access 1' command is executed.
+22:09:36 INFO  : Context for 'APU' is selected.
+22:09:36 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+22:09:37 INFO  : 'psu_init' command is executed.
+22:09:38 INFO  : 'after 1000' command is executed.
+22:09:38 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+22:09:39 INFO  : 'after 1000' command is executed.
+22:09:39 INFO  : 'psu_ps_pl_reset_config' command is executed.
+22:09:39 INFO  : 'catch {psu_protection}' command is executed.
+22:09:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:09:39 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:09:40 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:09:40 INFO  : 'configparams force-mem-access 0' command is executed.
+22:09:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0
+fpga -file /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/cam2/Debug/cam2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:09:40 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:09:40 INFO  : 'con' command is executed.
+22:09:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+22:09:40 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+22:48:04 INFO  : Disconnected from the channel tcfchan#8.
+22:48:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:48:08 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A7B204' is selected.
+22:48:08 INFO  : 'jtag frequency' command is executed.
+22:48:08 INFO  : Sourcing of '/tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+22:48:08 INFO  : Context for 'APU' is selected.
+22:48:09 INFO  : System reset is completed.
+22:48:12 INFO  : 'after 3000' command is executed.
+22:48:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0' command is executed.
+22:48:27 INFO  : FPGA configured successfully with bitstream "/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:48:27 INFO  : Context for 'APU' is selected.
+22:48:27 INFO  : Hardware design information is loaded from '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:48:27 INFO  : 'configparams force-mem-access 1' command is executed.
+22:48:27 INFO  : Context for 'APU' is selected.
+22:48:27 INFO  : Sourcing of '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+22:48:28 INFO  : 'psu_init' command is executed.
+22:48:29 INFO  : 'after 1000' command is executed.
+22:48:29 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+22:48:30 INFO  : 'after 1000' command is executed.
+22:48:30 INFO  : 'psu_ps_pl_reset_config' command is executed.
+22:48:30 INFO  : 'catch {psu_protection}' command is executed.
+22:48:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:48:30 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:48:30 INFO  : The application '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/displaypot/Debug/displaypot.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:48:30 INFO  : 'configparams force-mem-access 0' command is executed.
+22:48:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx1/SDK/2017.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204" && level==0} -index 0
+fpga -file /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+loadhw -hw /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+source /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+rst -processor
+dow /home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/displaypot/Debug/displaypot.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:48:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:48:30 INFO  : 'con' command is executed.
+22:48:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A7B204"} -index 1
+con
+----------------End of Script----------------
+
+22:48:30 INFO  : Launch script is exported to file '/home/ad2039/G00StereoCamera/SCAM/SCAM.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+22:57:16 INFO  : Disconnected from the channel tcfchan#9.

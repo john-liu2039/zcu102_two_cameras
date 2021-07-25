@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 24 19:20:52 2021
+# Process ID: 32294
+# Current directory: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_v_proc_ss_csc_1_synth_1
+# Command line: vivado -log design_1_v_proc_ss_csc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_v_proc_ss_csc_1.tcl
+# Log file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_v_proc_ss_csc_1_synth_1/design_1_v_proc_ss_csc_1.vds
+# Journal file: /home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_v_proc_ss_csc_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_v_proc_ss_csc_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1505.742 ; gain = 0.000 ; free physical = 19852 ; free virtual = 51755
+INFO: [Synth 8-638] synthesizing module 'design_1_v_proc_ss_csc_1' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_1/synth/design_1_v_proc_ss_csc_1.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_c35b' [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_1/bd_0/synth/bd_c35b.v:10]
+INFO: [Synth 8-638] synthesizing module 'bd_c35b_csc_0' [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_v_proc_ss_csc_1_synth_1/.Xil/Vivado-32294-ad2039/realtime/bd_c35b_csc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_c35b_csc_0' (1#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.runs/design_1_v_proc_ss_csc_1_synth_1/.Xil/Vivado-32294-ad2039/realtime/bd_c35b_csc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_c35b' (2#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_1/bd_0/synth/bd_c35b.v:10]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_proc_ss_csc_1' (3#1) [/home/ad2039/G00StereoCamera/SCAM/SCAM.srcs/sources_1/bd/design_1/ip/design_1_v_proc_ss_csc_1/synth/design_1_v_proc_ss_csc_1.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.742 ; gain = 0.000 ; free physical = 19853 ; free virtual = 51763
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.742 ; gain = 0.000 ; free physical = 19812 ; free virtual = 51723
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2075.766 ; gain = 0.000 ; free physical = 18405 ; free virtual = 50313
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2075.766 ; gain = 570.023 ; free physical = 17984 ; free virtual = 49892
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2075.766 ; gain = 570.023 ; free physical = 17987 ; free virtual = 49895
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2075.766 ; gain = 570.023 ; free physical = 18010 ; free virtual = 49918
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2075.766 ; gain = 570.023 ; free physical = 18023 ; free virtual = 49931
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2075.766 ; gain = 570.023 ; free physical = 18230 ; free virtual = 50138
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2765.672 ; gain = 1259.930 ; free physical = 20679 ; free virtual = 52574
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2765.672 ; gain = 1259.930 ; free physical = 20679 ; free virtual = 52574
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2774.688 ; gain = 1268.945 ; free physical = 20677 ; free virtual = 52573
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 2774.688 ; gain = 1268.945 ; free physical = 20691 ; free virtual = 52586
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 2774.688 ; gain = 1268.945 ; free physical = 20691 ; free virtual = 52586
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 2774.688 ; gain = 1268.945 ; free physical = 20691 ; free virtual = 52586
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 2774.688 ; gain = 1268.945 ; free physical = 20691 ; free virtual = 52586
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 2774.688 ; gain = 1268.945 ; free physical = 20691 ; free virtual = 52586
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 2774.688 ; gain = 1268.945 ; free physical = 20691 ; free virtual = 52586
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |bd_c35b_csc_0 |     1|
++------+--------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 2774.688 ; gain = 1268.945 ; free physical = 20691 ; free virtual = 52586
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 2807.320 ; gain = 1301.578 ; free physical = 20702 ; free virtual = 52597
